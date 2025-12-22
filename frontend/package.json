@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^3.1.1",
+    "axios": "^1.13.2",
+    "formik": "^2.4.9",
+    "next": "16.0.7",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-icons": "^5.5.0",
+    "react-toastify": "^11.0.5",
+    "yup": "^1.7.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.7",
+    "tailwindcss": "^4"
+  },
+  "browserslist": [
+    "chrome >= 93",
+    "firefox >= 90",
+    "edge >= 93",
+    "safari >= 15.4",
+    "not ie 11"
+  ]
+}
