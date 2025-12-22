@@ -26,7 +26,7 @@ export default function SearchProduct() {
         <input
           type="text"
           placeholder="Search"
-          className="p-2 pr-10 border border-black rounded-xl outline-none w-64"
+          className="p-2 pr-10 border border-black rounded-xl outline-none w-full"
           value={searchProduct}
           onChange={(e) => setSearchProduct(e.target.value)}
         />

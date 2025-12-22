@@ -1,27 +1,27 @@
 module.exports = [
-"[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:d77ec7 [app-ssr] (ecmascript) <text/javascript>", ((__turbopack_context__) => {
+"[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:af4fea [app-ssr] (ecmascript) <text/javascript>", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"408ea0158c3ee6a675a19dd6469dc1e72b9b3ff071":"AddProductAction"},"Documents/projects/crud-with-nextjs/frontend/app/action/ProductActions.js",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"408a3791cbf66995b58f26e211e809c4be2abf13bb":"AddProductAction"},"Documents/projects/crud-with-nextjs/frontend/app/action/ProductActions.js",""] */ __turbopack_context__.s([
     "AddProductAction",
     ()=>AddProductAction
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
 "use turbopack no side effects";
 ;
-var AddProductAction = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("408ea0158c3ee6a675a19dd6469dc1e72b9b3ff071", __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "AddProductAction"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vUHJvZHVjdEFjdGlvbnMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc2VydmVyXCI7XG5cbi8vIHJldmFsaWRhdGVQYXRoXG5pbXBvcnQgeyByZXZhbGlkYXRlUGF0aCB9IGZyb20gXCJuZXh0L2NhY2hlXCI7XG4vLyBBZGQgbmV3IHByb2R1Y3QgQVBJICYgZ2V0IGFsbCBwcm9kdWN0cyBBUElcbmltcG9ydCB7XG4gIGZldGNoQWxsUHJvZHVjdHMsXG4gIGFkZE5ld1Byb2R1Y3RzLFxuICB1cGRhdGVQcm9kdWN0cyxcbiAgcmVtb3ZlUHJvZHVjdCxcbn0gZnJvbSBcIi4uL2h0dHBTZXJ2aWNlcy9odHRwU2VydmljZXNcIjtcblxuY29uc3QgbG9jYWxDYWNoZSA9IFtdO1xuXG4vL0dldCBBbGwgUHJvZHVjdHMgQWN0aW9uXG4vLyBleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0QWxsUHJvZHVjdCgpIHtcbi8vICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cygwLCAxMCksIHtcbi8vICAgICBuZXh0OiB7IHJldmFsaWRhdGU6IDM2MDAgfSxcbi8vICAgfSk7XG4vLyAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuLy8gICByZXR1cm4gKHByb2R1Y3RzID0gcmVzRGF0YS5wcm9kdWN0cyk7XG4vLyB9XG5cbi8vIEdldCBhbGwgcHJvZHVjdHMgZm9yIHBhZ2luYXRpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRQcm9kdWN0cyhwYWdlID0gMSwgbGltaXQgPSAxNSkge1xuICBjb25zdCBza2lwID0gKHBhZ2UgLSAxKSAqIGxpbWl0O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cyhza2lwLCBsaW1pdCksIHtcbiAgICAgIGNhY2hlOiBcIm5vLXN0b3JlXCIsXG4gICAgfSk7XG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XG4gICAgY29uc3QgYWxscHJvZHVjdHMgPSBkYXRhLnByb2R1Y3RzO1xuICAgIGlmIChsb2NhbENhY2hlKSB7XG4gICAgICByZXR1cm4gWy4uLmxvY2FsQ2FjaGUsIC4uLmFsbHByb2R1Y3RzXTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIGFsbHByb2R1Y3RzO1xuICAgIH1cbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKFwiRmV0Y2ggRXJyb3I6XCIsIGVycm9yKTtcbiAgICByZXR1cm4gW107XG4gIH1cbn1cblxuLy8gQWRkIFByb2R1Y3QgQWN0aW9uXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gQWRkUHJvZHVjdEFjdGlvbihuZXdQcm9kdWN0RGF0YSkge1xuICBjb25zdCBuZXdQcm9kdWN0ID0ge1xuICAgIGlkOiBEYXRlLm5vdygpLFxuICAgIGltYWdlczogbmV3UHJvZHVjdERhdGEuaW1hZ2VzLFxuICAgIHRpdGxlOiBuZXdQcm9kdWN0RGF0YS50aXRsZSxcbiAgICBkZXNjcmlwdGlvbjogbmV3UHJvZHVjdERhdGEuZGVzY3JpcHRpb24sXG4gICAgY2F0ZWdvcnk6IG5ld1Byb2R1Y3REYXRhLmNhdGVnb3J5LFxuICAgIHJhdGluZzogbmV3UHJvZHVjdERhdGEucmF0aW5nLFxuICAgIHByaWNlOiBuZXdQcm9kdWN0RGF0YS5wcmljZSxcbiAgfTtcblxuICB0cnkge1xuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGFkZE5ld1Byb2R1Y3RzKCksIHtcbiAgICAgIG1ldGhvZDogXCJQT1NUXCIsXG4gICAgICBoZWFkZXI6IHsgXCJDb250ZW50LVR5cGVcIjogXCJhcHBsaWNhdGlvbi9qc29uXCIgfSxcbiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KG5ld1Byb2R1Y3QpLFxuICAgIH0pO1xuICAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxuXG4gIGxvY2FsQ2FjaGUudW5zaGlmdChuZXdQcm9kdWN0KTtcbiAgcmV2YWxpZGF0ZVBhdGgoXCIvXCIpO1xufVxuXG4vLyBVcGRhdGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVQcm9kdWN0QWN0aW9uKGZvcm1EYXRhKSB7XG4gIGNvbnN0IGlkID0gZm9ybURhdGEuaWQ7XG5cbiAgY29uc3QgdXBkYXRlZERhdGEgPSB7XG4gICAgdGl0bGU6IGZvcm1EYXRhLnRpdGxlLFxuICAgIGRlc2NyaXB0aW9uOiBmb3JtRGF0YS5kZXNjcmlwdGlvbixcbiAgICBjYXRlZ29yeTogZm9ybURhdGEuY2F0ZWdvcnksXG4gICAgcmF0aW5nOiBmb3JtRGF0YS5yYXRpbmcsXG4gICAgcHJpY2U6IGZvcm1EYXRhLnByaWNlLFxuICB9O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2godXBkYXRlUHJvZHVjdHMoaWQpLCB7XG4gICAgICBtZXRob2Q6IFwiUEFUQ0hcIixcbiAgICAgIGhlYWRlcjogeyBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIiB9LFxuICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkodXBkYXRlZERhdGEpLFxuICAgIH0pO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxufVxuXG4vLyBEZWxldGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVQcm9kdWN0QWN0aW9uKGlkKSB7XG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2gocmVtb3ZlUHJvZHVjdChpZCksIHtcbiAgICAgIG1ldGhvZDogXCJERUxFVEVcIixcbiAgICB9KTtcbiAgICBjb25zdCByZXNEYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcbiAgICByZXR1cm4gdHJ1ZTtcbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKGVycm9yKTtcbiAgICByZXR1cm4gZmFsc2U7XG4gIH1cbn1cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoibVZBNkNzQiJ9
+var AddProductAction = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("408a3791cbf66995b58f26e211e809c4be2abf13bb", __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "AddProductAction"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vUHJvZHVjdEFjdGlvbnMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc2VydmVyXCI7XG5cbi8vIHJldmFsaWRhdGVQYXRoXG5pbXBvcnQgeyByZXZhbGlkYXRlUGF0aCB9IGZyb20gXCJuZXh0L2NhY2hlXCI7XG4vLyBBZGQgbmV3IHByb2R1Y3QgQVBJICYgZ2V0IGFsbCBwcm9kdWN0cyBBUElcbmltcG9ydCB7XG4gIGZldGNoQWxsUHJvZHVjdHMsXG4gIGFkZE5ld1Byb2R1Y3RzLFxuICB1cGRhdGVQcm9kdWN0cyxcbiAgcmVtb3ZlUHJvZHVjdCxcbn0gZnJvbSBcIi4uL2h0dHBTZXJ2aWNlcy9odHRwU2VydmljZXNcIjtcblxuY29uc3QgbG9jYWxDYWNoZSA9IFtdO1xuXG4vL0dldCBBbGwgUHJvZHVjdHMgQWN0aW9uXG4vLyBleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0QWxsUHJvZHVjdCgpIHtcbi8vICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cygwLCAxMCksIHtcbi8vICAgICBuZXh0OiB7IHJldmFsaWRhdGU6IDM2MDAgfSxcbi8vICAgfSk7XG4vLyAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuLy8gICByZXR1cm4gKHByb2R1Y3RzID0gcmVzRGF0YS5wcm9kdWN0cyk7XG4vLyB9XG5cbi8vIEdldCBhbGwgcHJvZHVjdHMgZm9yIHBhZ2luYXRpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRQcm9kdWN0cyhwYWdlID0gMSwgbGltaXQgPSAxNSkge1xuICBjb25zdCBza2lwID0gKHBhZ2UgLSAxKSAqIGxpbWl0O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cyhza2lwLCBsaW1pdCksIHtcbiAgICAgIGNhY2hlOiBcIm5vLXN0b3JlXCIsXG4gICAgfSk7XG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XG4gICAgY29uc3QgYWxscHJvZHVjdHMgPSBkYXRhLnByb2R1Y3RzO1xuICAgIGlmIChsb2NhbENhY2hlKSB7XG4gICAgICByZXR1cm4gWy4uLmxvY2FsQ2FjaGUsIC4uLmFsbHByb2R1Y3RzXTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIGFsbHByb2R1Y3RzO1xuICAgIH1cbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKFwiRmV0Y2ggRXJyb3I6XCIsIGVycm9yKTtcbiAgICByZXR1cm4gW107XG4gIH1cbn1cblxuLy8gQWRkIFByb2R1Y3QgQWN0aW9uXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gQWRkUHJvZHVjdEFjdGlvbihuZXdQcm9kdWN0RGF0YSkge1xuICBjb25zdCBuZXdQcm9kdWN0ID0ge1xuICAgIGlkOiBEYXRlLm5vdygpLFxuICAgIGltYWdlczogbmV3UHJvZHVjdERhdGEuaW1hZ2VzLFxuICAgIHRpdGxlOiBuZXdQcm9kdWN0RGF0YS50aXRsZSxcbiAgICBkZXNjcmlwdGlvbjogbmV3UHJvZHVjdERhdGEuZGVzY3JpcHRpb24sXG4gICAgY2F0ZWdvcnk6IG5ld1Byb2R1Y3REYXRhLmNhdGVnb3J5LFxuICAgIHJhdGluZzogbmV3UHJvZHVjdERhdGEucmF0aW5nLFxuICAgIHByaWNlOiBuZXdQcm9kdWN0RGF0YS5wcmljZSxcbiAgfTtcblxuICB0cnkge1xuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGFkZE5ld1Byb2R1Y3RzKCksIHtcbiAgICAgIG1ldGhvZDogXCJQT1NUXCIsXG4gICAgICBoZWFkZXI6IHsgXCJDb250ZW50LVR5cGVcIjogXCJhcHBsaWNhdGlvbi9qc29uXCIgfSxcbiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KG5ld1Byb2R1Y3QpLFxuICAgIH0pO1xuICAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxuXG4gIGxvY2FsQ2FjaGUudW5zaGlmdChuZXdQcm9kdWN0KTtcbiAgcmV2YWxpZGF0ZVBhdGgoXCIvXCIpO1xufVxuXG4vLyBVcGRhdGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVQcm9kdWN0QWN0aW9uKGZvcm1EYXRhKSB7XG4gIGNvbnN0IGlkID0gZm9ybURhdGEuaWQ7XG5cbiAgY29uc3QgdXBkYXRlZERhdGEgPSB7XG4gICAgdGl0bGU6IGZvcm1EYXRhLnRpdGxlLFxuICAgIGRlc2NyaXB0aW9uOiBmb3JtRGF0YS5kZXNjcmlwdGlvbixcbiAgICBjYXRlZ29yeTogZm9ybURhdGEuY2F0ZWdvcnksXG4gICAgcmF0aW5nOiBmb3JtRGF0YS5yYXRpbmcsXG4gICAgcHJpY2U6IGZvcm1EYXRhLnByaWNlLFxuICB9O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2godXBkYXRlUHJvZHVjdHMoaWQpLCB7XG4gICAgICBtZXRob2Q6IFwiUEFUQ0hcIixcbiAgICAgIGhlYWRlcjogeyBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIiB9LFxuICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkodXBkYXRlZERhdGEpLFxuICAgIH0pO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxufVxuXG4vLyBEZWxldGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVQcm9kdWN0QWN0aW9uKGlkKSB7XG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2gocmVtb3ZlUHJvZHVjdChpZCksIHtcbiAgICAgIG1ldGhvZDogXCJERUxFVEVcIixcbiAgICB9KTtcbiAgICBjb25zdCByZXNEYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcbiAgICByZXR1cm4gdHJ1ZTtcbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKGVycm9yKTtcbiAgICByZXR1cm4gZmFsc2U7XG4gIH1cbn1cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoibVZBNkNzQiJ9
 }),
-"[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:697a27 [app-ssr] (ecmascript) <text/javascript>", ((__turbopack_context__) => {
+"[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:96492c [app-ssr] (ecmascript) <text/javascript>", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"40bb1536985321555bb4b24ca97dcfa0d639c4fca1":"updateProductAction"},"Documents/projects/crud-with-nextjs/frontend/app/action/ProductActions.js",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"40bea55e0304967e1f9c1006eab8c7ecdc15c5f884":"updateProductAction"},"Documents/projects/crud-with-nextjs/frontend/app/action/ProductActions.js",""] */ __turbopack_context__.s([
     "updateProductAction",
     ()=>updateProductAction
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
 "use turbopack no side effects";
 ;
-var updateProductAction = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("40bb1536985321555bb4b24ca97dcfa0d639c4fca1", __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "updateProductAction"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vUHJvZHVjdEFjdGlvbnMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc2VydmVyXCI7XG5cbi8vIHJldmFsaWRhdGVQYXRoXG5pbXBvcnQgeyByZXZhbGlkYXRlUGF0aCB9IGZyb20gXCJuZXh0L2NhY2hlXCI7XG4vLyBBZGQgbmV3IHByb2R1Y3QgQVBJICYgZ2V0IGFsbCBwcm9kdWN0cyBBUElcbmltcG9ydCB7XG4gIGZldGNoQWxsUHJvZHVjdHMsXG4gIGFkZE5ld1Byb2R1Y3RzLFxuICB1cGRhdGVQcm9kdWN0cyxcbiAgcmVtb3ZlUHJvZHVjdCxcbn0gZnJvbSBcIi4uL2h0dHBTZXJ2aWNlcy9odHRwU2VydmljZXNcIjtcblxuY29uc3QgbG9jYWxDYWNoZSA9IFtdO1xuXG4vL0dldCBBbGwgUHJvZHVjdHMgQWN0aW9uXG4vLyBleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0QWxsUHJvZHVjdCgpIHtcbi8vICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cygwLCAxMCksIHtcbi8vICAgICBuZXh0OiB7IHJldmFsaWRhdGU6IDM2MDAgfSxcbi8vICAgfSk7XG4vLyAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuLy8gICByZXR1cm4gKHByb2R1Y3RzID0gcmVzRGF0YS5wcm9kdWN0cyk7XG4vLyB9XG5cbi8vIEdldCBhbGwgcHJvZHVjdHMgZm9yIHBhZ2luYXRpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRQcm9kdWN0cyhwYWdlID0gMSwgbGltaXQgPSAxNSkge1xuICBjb25zdCBza2lwID0gKHBhZ2UgLSAxKSAqIGxpbWl0O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cyhza2lwLCBsaW1pdCksIHtcbiAgICAgIGNhY2hlOiBcIm5vLXN0b3JlXCIsXG4gICAgfSk7XG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XG4gICAgY29uc3QgYWxscHJvZHVjdHMgPSBkYXRhLnByb2R1Y3RzO1xuICAgIGlmIChsb2NhbENhY2hlKSB7XG4gICAgICByZXR1cm4gWy4uLmxvY2FsQ2FjaGUsIC4uLmFsbHByb2R1Y3RzXTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIGFsbHByb2R1Y3RzO1xuICAgIH1cbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKFwiRmV0Y2ggRXJyb3I6XCIsIGVycm9yKTtcbiAgICByZXR1cm4gW107XG4gIH1cbn1cblxuLy8gQWRkIFByb2R1Y3QgQWN0aW9uXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gQWRkUHJvZHVjdEFjdGlvbihuZXdQcm9kdWN0RGF0YSkge1xuICBjb25zdCBuZXdQcm9kdWN0ID0ge1xuICAgIGlkOiBEYXRlLm5vdygpLFxuICAgIGltYWdlczogbmV3UHJvZHVjdERhdGEuaW1hZ2VzLFxuICAgIHRpdGxlOiBuZXdQcm9kdWN0RGF0YS50aXRsZSxcbiAgICBkZXNjcmlwdGlvbjogbmV3UHJvZHVjdERhdGEuZGVzY3JpcHRpb24sXG4gICAgY2F0ZWdvcnk6IG5ld1Byb2R1Y3REYXRhLmNhdGVnb3J5LFxuICAgIHJhdGluZzogbmV3UHJvZHVjdERhdGEucmF0aW5nLFxuICAgIHByaWNlOiBuZXdQcm9kdWN0RGF0YS5wcmljZSxcbiAgfTtcblxuICB0cnkge1xuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGFkZE5ld1Byb2R1Y3RzKCksIHtcbiAgICAgIG1ldGhvZDogXCJQT1NUXCIsXG4gICAgICBoZWFkZXI6IHsgXCJDb250ZW50LVR5cGVcIjogXCJhcHBsaWNhdGlvbi9qc29uXCIgfSxcbiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KG5ld1Byb2R1Y3QpLFxuICAgIH0pO1xuICAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxuXG4gIGxvY2FsQ2FjaGUudW5zaGlmdChuZXdQcm9kdWN0KTtcbiAgcmV2YWxpZGF0ZVBhdGgoXCIvXCIpO1xufVxuXG4vLyBVcGRhdGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVQcm9kdWN0QWN0aW9uKGZvcm1EYXRhKSB7XG4gIGNvbnN0IGlkID0gZm9ybURhdGEuaWQ7XG5cbiAgY29uc3QgdXBkYXRlZERhdGEgPSB7XG4gICAgdGl0bGU6IGZvcm1EYXRhLnRpdGxlLFxuICAgIGRlc2NyaXB0aW9uOiBmb3JtRGF0YS5kZXNjcmlwdGlvbixcbiAgICBjYXRlZ29yeTogZm9ybURhdGEuY2F0ZWdvcnksXG4gICAgcmF0aW5nOiBmb3JtRGF0YS5yYXRpbmcsXG4gICAgcHJpY2U6IGZvcm1EYXRhLnByaWNlLFxuICB9O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2godXBkYXRlUHJvZHVjdHMoaWQpLCB7XG4gICAgICBtZXRob2Q6IFwiUEFUQ0hcIixcbiAgICAgIGhlYWRlcjogeyBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIiB9LFxuICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkodXBkYXRlZERhdGEpLFxuICAgIH0pO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxufVxuXG4vLyBEZWxldGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVQcm9kdWN0QWN0aW9uKGlkKSB7XG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2gocmVtb3ZlUHJvZHVjdChpZCksIHtcbiAgICAgIG1ldGhvZDogXCJERUxFVEVcIixcbiAgICB9KTtcbiAgICBjb25zdCByZXNEYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcbiAgICByZXR1cm4gdHJ1ZTtcbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKGVycm9yKTtcbiAgICByZXR1cm4gZmFsc2U7XG4gIH1cbn1cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoic1ZBd0VzQiJ9
+var updateProductAction = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("40bea55e0304967e1f9c1006eab8c7ecdc15c5f884", __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "updateProductAction"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vUHJvZHVjdEFjdGlvbnMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc2VydmVyXCI7XG5cbi8vIHJldmFsaWRhdGVQYXRoXG5pbXBvcnQgeyByZXZhbGlkYXRlUGF0aCB9IGZyb20gXCJuZXh0L2NhY2hlXCI7XG4vLyBBZGQgbmV3IHByb2R1Y3QgQVBJICYgZ2V0IGFsbCBwcm9kdWN0cyBBUElcbmltcG9ydCB7XG4gIGZldGNoQWxsUHJvZHVjdHMsXG4gIGFkZE5ld1Byb2R1Y3RzLFxuICB1cGRhdGVQcm9kdWN0cyxcbiAgcmVtb3ZlUHJvZHVjdCxcbn0gZnJvbSBcIi4uL2h0dHBTZXJ2aWNlcy9odHRwU2VydmljZXNcIjtcblxuY29uc3QgbG9jYWxDYWNoZSA9IFtdO1xuXG4vL0dldCBBbGwgUHJvZHVjdHMgQWN0aW9uXG4vLyBleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0QWxsUHJvZHVjdCgpIHtcbi8vICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cygwLCAxMCksIHtcbi8vICAgICBuZXh0OiB7IHJldmFsaWRhdGU6IDM2MDAgfSxcbi8vICAgfSk7XG4vLyAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuLy8gICByZXR1cm4gKHByb2R1Y3RzID0gcmVzRGF0YS5wcm9kdWN0cyk7XG4vLyB9XG5cbi8vIEdldCBhbGwgcHJvZHVjdHMgZm9yIHBhZ2luYXRpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRQcm9kdWN0cyhwYWdlID0gMSwgbGltaXQgPSAxNSkge1xuICBjb25zdCBza2lwID0gKHBhZ2UgLSAxKSAqIGxpbWl0O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cyhza2lwLCBsaW1pdCksIHtcbiAgICAgIGNhY2hlOiBcIm5vLXN0b3JlXCIsXG4gICAgfSk7XG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XG4gICAgY29uc3QgYWxscHJvZHVjdHMgPSBkYXRhLnByb2R1Y3RzO1xuICAgIGlmIChsb2NhbENhY2hlKSB7XG4gICAgICByZXR1cm4gWy4uLmxvY2FsQ2FjaGUsIC4uLmFsbHByb2R1Y3RzXTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIGFsbHByb2R1Y3RzO1xuICAgIH1cbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKFwiRmV0Y2ggRXJyb3I6XCIsIGVycm9yKTtcbiAgICByZXR1cm4gW107XG4gIH1cbn1cblxuLy8gQWRkIFByb2R1Y3QgQWN0aW9uXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gQWRkUHJvZHVjdEFjdGlvbihuZXdQcm9kdWN0RGF0YSkge1xuICBjb25zdCBuZXdQcm9kdWN0ID0ge1xuICAgIGlkOiBEYXRlLm5vdygpLFxuICAgIGltYWdlczogbmV3UHJvZHVjdERhdGEuaW1hZ2VzLFxuICAgIHRpdGxlOiBuZXdQcm9kdWN0RGF0YS50aXRsZSxcbiAgICBkZXNjcmlwdGlvbjogbmV3UHJvZHVjdERhdGEuZGVzY3JpcHRpb24sXG4gICAgY2F0ZWdvcnk6IG5ld1Byb2R1Y3REYXRhLmNhdGVnb3J5LFxuICAgIHJhdGluZzogbmV3UHJvZHVjdERhdGEucmF0aW5nLFxuICAgIHByaWNlOiBuZXdQcm9kdWN0RGF0YS5wcmljZSxcbiAgfTtcblxuICB0cnkge1xuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGFkZE5ld1Byb2R1Y3RzKCksIHtcbiAgICAgIG1ldGhvZDogXCJQT1NUXCIsXG4gICAgICBoZWFkZXI6IHsgXCJDb250ZW50LVR5cGVcIjogXCJhcHBsaWNhdGlvbi9qc29uXCIgfSxcbiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KG5ld1Byb2R1Y3QpLFxuICAgIH0pO1xuICAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxuXG4gIGxvY2FsQ2FjaGUudW5zaGlmdChuZXdQcm9kdWN0KTtcbiAgcmV2YWxpZGF0ZVBhdGgoXCIvXCIpO1xufVxuXG4vLyBVcGRhdGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVQcm9kdWN0QWN0aW9uKGZvcm1EYXRhKSB7XG4gIGNvbnN0IGlkID0gZm9ybURhdGEuaWQ7XG5cbiAgY29uc3QgdXBkYXRlZERhdGEgPSB7XG4gICAgdGl0bGU6IGZvcm1EYXRhLnRpdGxlLFxuICAgIGRlc2NyaXB0aW9uOiBmb3JtRGF0YS5kZXNjcmlwdGlvbixcbiAgICBjYXRlZ29yeTogZm9ybURhdGEuY2F0ZWdvcnksXG4gICAgcmF0aW5nOiBmb3JtRGF0YS5yYXRpbmcsXG4gICAgcHJpY2U6IGZvcm1EYXRhLnByaWNlLFxuICB9O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2godXBkYXRlUHJvZHVjdHMoaWQpLCB7XG4gICAgICBtZXRob2Q6IFwiUEFUQ0hcIixcbiAgICAgIGhlYWRlcjogeyBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIiB9LFxuICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkodXBkYXRlZERhdGEpLFxuICAgIH0pO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxufVxuXG4vLyBEZWxldGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVQcm9kdWN0QWN0aW9uKGlkKSB7XG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2gocmVtb3ZlUHJvZHVjdChpZCksIHtcbiAgICAgIG1ldGhvZDogXCJERUxFVEVcIixcbiAgICB9KTtcbiAgICBjb25zdCByZXNEYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcbiAgICByZXR1cm4gdHJ1ZTtcbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKGVycm9yKTtcbiAgICByZXR1cm4gZmFsc2U7XG4gIH1cbn1cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoic1ZBd0VzQiJ9
 }),
 "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/AddProductModal/AddProductModal.js [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -32,8 +32,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 // Actions
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$d77ec7__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:d77ec7 [app-ssr] (ecmascript) <text/javascript>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$697a27__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:697a27 [app-ssr] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$af4fea__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:af4fea [app-ssr] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$96492c__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:96492c [app-ssr] (ecmascript) <text/javascript>");
 // Router
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 // Hooks
@@ -99,9 +99,9 @@ function AddProductModal({ productToEdit }) {
     const handleSubmit = async (e)=>{
         e.preventDefault();
         if (formData.id) {
-            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$697a27__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["updateProductAction"])(formData);
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$96492c__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["updateProductAction"])(formData);
         } else {
-            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$d77ec7__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["AddProductAction"])(formData);
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$af4fea__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["AddProductAction"])(formData);
         }
         handleClose();
     };
@@ -420,7 +420,7 @@ function DataCard({ id, image, title, description, category, rating, price, onRe
     if (!isVisible) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
         href: `/products/${id}`,
-        className: "border rounded-xl p-5 m-2.5 w-[400px] h-auto space-y-6 text-lg",
+        className: "border rounded-2xl p-4 lg:p-5 space-y-4 text-sm lg:text-base transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-white dark:bg-black",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "overflow-hidden text-center",
@@ -429,7 +429,7 @@ function DataCard({ id, image, title, description, category, rating, price, onRe
                     alt: "productImages",
                     width: 250,
                     height: 250,
-                    className: "object-cover mx-auto",
+                    className: "object-cover mx-auto w-[180px] h-[180px] md:w-[220px] md:h-[220px] transition-transform duration-300 hover:scale-105",
                     placeholder: "blur",
                     blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAUElEQVR4nO3OMRHAIAAAMcBkj8O/jxro8hMdEgWZzz7jf9btwDetQqvQKrQKrUKr0Cq0Cq1Cq9AqtAqtQqvQKrQKrUKr0Cq0Cq1Cq9AqtIoXooYBb1MYuvkAAAAASUVORK5CYII="
                 }, void 0, false, {
@@ -443,91 +443,97 @@ function DataCard({ id, image, title, description, category, rating, price, onRe
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "truncate",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                        children: "Title: "
+                        children: "Title:"
                     }, void 0, false, {
                         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                        lineNumber: 52,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, this),
+                    " ",
                     title.length > 15 ? title.slice(0, 14) + "..." : title
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                lineNumber: 51,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                        children: "Description: "
+                        children: "Description:"
                     }, void 0, false, {
                         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                        lineNumber: 56,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
+                    " ",
                     description.length > 20 ? description.slice(0, 19) + "..." : description
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                lineNumber: 55,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                        children: "Category: "
+                        children: "Category:"
                     }, void 0, false, {
                         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                        lineNumber: 62,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
+                    " ",
                     category
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                lineNumber: 61,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                        children: "Rating: "
+                        children: "Rating:"
                     }, void 0, false, {
                         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                        lineNumber: 66,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
+                    " ⭐ ",
                     rating
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                lineNumber: 65,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "mb-4",
+                className: "font-semibold text-lg",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
-                        children: "Price: "
+                        children: "Price:"
                     }, void 0, false, {
                         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                        lineNumber: 70,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this),
+                    " ₹",
                     price
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                lineNumber: 69,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             token && userdata.role === "admin" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center gap-3",
+                className: "flex flex-col sm:flex-row gap-3 pt-3",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "px-10 py-4 text-xl bg-green-500 border-2 border-green-500 rounded-3xl transition-all duration-300 hover:bg-transparent cursor-pointer",
+                        className: "flex-1 py-2 text-sm lg:text-base bg-green-500 border-2 border-green-500 rounded-xl transition-all hover:bg-transparent",
                         onClick: (e)=>{
                             e.preventDefault();
                             e.stopPropagation();
@@ -538,11 +544,11 @@ function DataCard({ id, image, title, description, category, rating, price, onRe
                         children: "Edit"
                     }, void 0, false, {
                         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                        lineNumber: 75,
+                        lineNumber: 77,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        className: "px-10 py-4 text-xl bg-red-500 border-2 border-red-500 rounded-3xl transition-all duration-300 hover:bg-transparent cursor-pointer",
+                        className: "flex-1 py-2 text-sm lg:text-base bg-red-500 border-2 border-red-500 rounded-xl transition-all hover:bg-transparent",
                         onClick: (e)=>{
                             e.preventDefault();
                             e.stopPropagation();
@@ -551,13 +557,13 @@ function DataCard({ id, image, title, description, category, rating, price, onRe
                         children: "Delete"
                     }, void 0, false, {
                         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                        lineNumber: 84,
+                        lineNumber: 87,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx",
-                lineNumber: 74,
+                lineNumber: 76,
                 columnNumber: 9
             }, this)
         ]
@@ -568,17 +574,17 @@ function DataCard({ id, image, title, description, category, rating, price, onRe
     }, this);
 }
 }),
-"[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:ec8a81 [app-ssr] (ecmascript) <text/javascript>", ((__turbopack_context__) => {
+"[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:c244e8 [app-ssr] (ecmascript) <text/javascript>", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"60d5b509957c5b0983714866883f7c3d706913e685":"getProducts"},"Documents/projects/crud-with-nextjs/frontend/app/action/ProductActions.js",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"607f5c6b39ddefba778ec2902eae39c1b06d2bb41b":"getProducts"},"Documents/projects/crud-with-nextjs/frontend/app/action/ProductActions.js",""] */ __turbopack_context__.s([
     "getProducts",
     ()=>getProducts
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-loader/action-client-wrapper.js [app-ssr] (ecmascript)");
 "use turbopack no side effects";
 ;
-var getProducts = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("60d5b509957c5b0983714866883f7c3d706913e685", __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getProducts"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vUHJvZHVjdEFjdGlvbnMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc2VydmVyXCI7XG5cbi8vIHJldmFsaWRhdGVQYXRoXG5pbXBvcnQgeyByZXZhbGlkYXRlUGF0aCB9IGZyb20gXCJuZXh0L2NhY2hlXCI7XG4vLyBBZGQgbmV3IHByb2R1Y3QgQVBJICYgZ2V0IGFsbCBwcm9kdWN0cyBBUElcbmltcG9ydCB7XG4gIGZldGNoQWxsUHJvZHVjdHMsXG4gIGFkZE5ld1Byb2R1Y3RzLFxuICB1cGRhdGVQcm9kdWN0cyxcbiAgcmVtb3ZlUHJvZHVjdCxcbn0gZnJvbSBcIi4uL2h0dHBTZXJ2aWNlcy9odHRwU2VydmljZXNcIjtcblxuY29uc3QgbG9jYWxDYWNoZSA9IFtdO1xuXG4vL0dldCBBbGwgUHJvZHVjdHMgQWN0aW9uXG4vLyBleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0QWxsUHJvZHVjdCgpIHtcbi8vICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cygwLCAxMCksIHtcbi8vICAgICBuZXh0OiB7IHJldmFsaWRhdGU6IDM2MDAgfSxcbi8vICAgfSk7XG4vLyAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuLy8gICByZXR1cm4gKHByb2R1Y3RzID0gcmVzRGF0YS5wcm9kdWN0cyk7XG4vLyB9XG5cbi8vIEdldCBhbGwgcHJvZHVjdHMgZm9yIHBhZ2luYXRpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRQcm9kdWN0cyhwYWdlID0gMSwgbGltaXQgPSAxNSkge1xuICBjb25zdCBza2lwID0gKHBhZ2UgLSAxKSAqIGxpbWl0O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cyhza2lwLCBsaW1pdCksIHtcbiAgICAgIGNhY2hlOiBcIm5vLXN0b3JlXCIsXG4gICAgfSk7XG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XG4gICAgY29uc3QgYWxscHJvZHVjdHMgPSBkYXRhLnByb2R1Y3RzO1xuICAgIGlmIChsb2NhbENhY2hlKSB7XG4gICAgICByZXR1cm4gWy4uLmxvY2FsQ2FjaGUsIC4uLmFsbHByb2R1Y3RzXTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIGFsbHByb2R1Y3RzO1xuICAgIH1cbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKFwiRmV0Y2ggRXJyb3I6XCIsIGVycm9yKTtcbiAgICByZXR1cm4gW107XG4gIH1cbn1cblxuLy8gQWRkIFByb2R1Y3QgQWN0aW9uXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gQWRkUHJvZHVjdEFjdGlvbihuZXdQcm9kdWN0RGF0YSkge1xuICBjb25zdCBuZXdQcm9kdWN0ID0ge1xuICAgIGlkOiBEYXRlLm5vdygpLFxuICAgIGltYWdlczogbmV3UHJvZHVjdERhdGEuaW1hZ2VzLFxuICAgIHRpdGxlOiBuZXdQcm9kdWN0RGF0YS50aXRsZSxcbiAgICBkZXNjcmlwdGlvbjogbmV3UHJvZHVjdERhdGEuZGVzY3JpcHRpb24sXG4gICAgY2F0ZWdvcnk6IG5ld1Byb2R1Y3REYXRhLmNhdGVnb3J5LFxuICAgIHJhdGluZzogbmV3UHJvZHVjdERhdGEucmF0aW5nLFxuICAgIHByaWNlOiBuZXdQcm9kdWN0RGF0YS5wcmljZSxcbiAgfTtcblxuICB0cnkge1xuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGFkZE5ld1Byb2R1Y3RzKCksIHtcbiAgICAgIG1ldGhvZDogXCJQT1NUXCIsXG4gICAgICBoZWFkZXI6IHsgXCJDb250ZW50LVR5cGVcIjogXCJhcHBsaWNhdGlvbi9qc29uXCIgfSxcbiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KG5ld1Byb2R1Y3QpLFxuICAgIH0pO1xuICAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxuXG4gIGxvY2FsQ2FjaGUudW5zaGlmdChuZXdQcm9kdWN0KTtcbiAgcmV2YWxpZGF0ZVBhdGgoXCIvXCIpO1xufVxuXG4vLyBVcGRhdGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVQcm9kdWN0QWN0aW9uKGZvcm1EYXRhKSB7XG4gIGNvbnN0IGlkID0gZm9ybURhdGEuaWQ7XG5cbiAgY29uc3QgdXBkYXRlZERhdGEgPSB7XG4gICAgdGl0bGU6IGZvcm1EYXRhLnRpdGxlLFxuICAgIGRlc2NyaXB0aW9uOiBmb3JtRGF0YS5kZXNjcmlwdGlvbixcbiAgICBjYXRlZ29yeTogZm9ybURhdGEuY2F0ZWdvcnksXG4gICAgcmF0aW5nOiBmb3JtRGF0YS5yYXRpbmcsXG4gICAgcHJpY2U6IGZvcm1EYXRhLnByaWNlLFxuICB9O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2godXBkYXRlUHJvZHVjdHMoaWQpLCB7XG4gICAgICBtZXRob2Q6IFwiUEFUQ0hcIixcbiAgICAgIGhlYWRlcjogeyBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIiB9LFxuICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkodXBkYXRlZERhdGEpLFxuICAgIH0pO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxufVxuXG4vLyBEZWxldGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVQcm9kdWN0QWN0aW9uKGlkKSB7XG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2gocmVtb3ZlUHJvZHVjdChpZCksIHtcbiAgICAgIG1ldGhvZDogXCJERUxFVEVcIixcbiAgICB9KTtcbiAgICBjb25zdCByZXNEYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcbiAgICByZXR1cm4gdHJ1ZTtcbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKGVycm9yKTtcbiAgICByZXR1cm4gZmFsc2U7XG4gIH1cbn1cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOFVBd0JzQiJ9
+var getProducts = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["createServerReference"])("607f5c6b39ddefba778ec2902eae39c1b06d2bb41b", __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["callServer"], void 0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$client$2d$wrapper$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["findSourceMapURL"], "getProducts"); //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4vUHJvZHVjdEFjdGlvbnMuanMiXSwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc2VydmVyXCI7XG5cbi8vIHJldmFsaWRhdGVQYXRoXG5pbXBvcnQgeyByZXZhbGlkYXRlUGF0aCB9IGZyb20gXCJuZXh0L2NhY2hlXCI7XG4vLyBBZGQgbmV3IHByb2R1Y3QgQVBJICYgZ2V0IGFsbCBwcm9kdWN0cyBBUElcbmltcG9ydCB7XG4gIGZldGNoQWxsUHJvZHVjdHMsXG4gIGFkZE5ld1Byb2R1Y3RzLFxuICB1cGRhdGVQcm9kdWN0cyxcbiAgcmVtb3ZlUHJvZHVjdCxcbn0gZnJvbSBcIi4uL2h0dHBTZXJ2aWNlcy9odHRwU2VydmljZXNcIjtcblxuY29uc3QgbG9jYWxDYWNoZSA9IFtdO1xuXG4vL0dldCBBbGwgUHJvZHVjdHMgQWN0aW9uXG4vLyBleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0QWxsUHJvZHVjdCgpIHtcbi8vICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cygwLCAxMCksIHtcbi8vICAgICBuZXh0OiB7IHJldmFsaWRhdGU6IDM2MDAgfSxcbi8vICAgfSk7XG4vLyAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuLy8gICByZXR1cm4gKHByb2R1Y3RzID0gcmVzRGF0YS5wcm9kdWN0cyk7XG4vLyB9XG5cbi8vIEdldCBhbGwgcHJvZHVjdHMgZm9yIHBhZ2luYXRpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRQcm9kdWN0cyhwYWdlID0gMSwgbGltaXQgPSAxNSkge1xuICBjb25zdCBza2lwID0gKHBhZ2UgLSAxKSAqIGxpbWl0O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goZmV0Y2hBbGxQcm9kdWN0cyhza2lwLCBsaW1pdCksIHtcbiAgICAgIGNhY2hlOiBcIm5vLXN0b3JlXCIsXG4gICAgfSk7XG4gICAgY29uc3QgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7XG4gICAgY29uc3QgYWxscHJvZHVjdHMgPSBkYXRhLnByb2R1Y3RzO1xuICAgIGlmIChsb2NhbENhY2hlKSB7XG4gICAgICByZXR1cm4gWy4uLmxvY2FsQ2FjaGUsIC4uLmFsbHByb2R1Y3RzXTtcbiAgICB9IGVsc2Uge1xuICAgICAgcmV0dXJuIGFsbHByb2R1Y3RzO1xuICAgIH1cbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKFwiRmV0Y2ggRXJyb3I6XCIsIGVycm9yKTtcbiAgICByZXR1cm4gW107XG4gIH1cbn1cblxuLy8gQWRkIFByb2R1Y3QgQWN0aW9uXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gQWRkUHJvZHVjdEFjdGlvbihuZXdQcm9kdWN0RGF0YSkge1xuICBjb25zdCBuZXdQcm9kdWN0ID0ge1xuICAgIGlkOiBEYXRlLm5vdygpLFxuICAgIGltYWdlczogbmV3UHJvZHVjdERhdGEuaW1hZ2VzLFxuICAgIHRpdGxlOiBuZXdQcm9kdWN0RGF0YS50aXRsZSxcbiAgICBkZXNjcmlwdGlvbjogbmV3UHJvZHVjdERhdGEuZGVzY3JpcHRpb24sXG4gICAgY2F0ZWdvcnk6IG5ld1Byb2R1Y3REYXRhLmNhdGVnb3J5LFxuICAgIHJhdGluZzogbmV3UHJvZHVjdERhdGEucmF0aW5nLFxuICAgIHByaWNlOiBuZXdQcm9kdWN0RGF0YS5wcmljZSxcbiAgfTtcblxuICB0cnkge1xuICAgIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGFkZE5ld1Byb2R1Y3RzKCksIHtcbiAgICAgIG1ldGhvZDogXCJQT1NUXCIsXG4gICAgICBoZWFkZXI6IHsgXCJDb250ZW50LVR5cGVcIjogXCJhcHBsaWNhdGlvbi9qc29uXCIgfSxcbiAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KG5ld1Byb2R1Y3QpLFxuICAgIH0pO1xuICAgIGNvbnN0IHJlc0RhdGEgPSBhd2FpdCByZXMuanNvbigpO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxuXG4gIGxvY2FsQ2FjaGUudW5zaGlmdChuZXdQcm9kdWN0KTtcbiAgcmV2YWxpZGF0ZVBhdGgoXCIvXCIpO1xufVxuXG4vLyBVcGRhdGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiB1cGRhdGVQcm9kdWN0QWN0aW9uKGZvcm1EYXRhKSB7XG4gIGNvbnN0IGlkID0gZm9ybURhdGEuaWQ7XG5cbiAgY29uc3QgdXBkYXRlZERhdGEgPSB7XG4gICAgdGl0bGU6IGZvcm1EYXRhLnRpdGxlLFxuICAgIGRlc2NyaXB0aW9uOiBmb3JtRGF0YS5kZXNjcmlwdGlvbixcbiAgICBjYXRlZ29yeTogZm9ybURhdGEuY2F0ZWdvcnksXG4gICAgcmF0aW5nOiBmb3JtRGF0YS5yYXRpbmcsXG4gICAgcHJpY2U6IGZvcm1EYXRhLnByaWNlLFxuICB9O1xuXG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2godXBkYXRlUHJvZHVjdHMoaWQpLCB7XG4gICAgICBtZXRob2Q6IFwiUEFUQ0hcIixcbiAgICAgIGhlYWRlcjogeyBcIkNvbnRlbnQtVHlwZVwiOiBcImFwcGxpY2F0aW9uL2pzb25cIiB9LFxuICAgICAgYm9keTogSlNPTi5zdHJpbmdpZnkodXBkYXRlZERhdGEpLFxuICAgIH0pO1xuICB9IGNhdGNoIChlcnJvcikge1xuICAgIGNvbnNvbGUubG9nKGVycm9yKTtcbiAgfVxufVxuXG4vLyBEZWxldGUgUHJvZHVjdCBBY3Rpb25cbmV4cG9ydCBhc3luYyBmdW5jdGlvbiBkZWxldGVQcm9kdWN0QWN0aW9uKGlkKSB7XG4gIHRyeSB7XG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2gocmVtb3ZlUHJvZHVjdChpZCksIHtcbiAgICAgIG1ldGhvZDogXCJERUxFVEVcIixcbiAgICB9KTtcbiAgICBjb25zdCByZXNEYXRhID0gYXdhaXQgcmVzLmpzb24oKTtcbiAgICByZXR1cm4gdHJ1ZTtcbiAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICBjb25zb2xlLmVycm9yKGVycm9yKTtcbiAgICByZXR1cm4gZmFsc2U7XG4gIH1cbn1cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOFVBd0JzQiJ9
 }),
 "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/ProductFeed/ProductFeed.jsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -590,7 +596,7 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$_components$2f$DataCard$2f$DataCard$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/DataCard/DataCard.jsx [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$ec8a81__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:ec8a81 [app-ssr] (ecmascript) <text/javascript>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$c244e8__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/app/action/data:c244e8 [app-ssr] (ecmascript) <text/javascript>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 "use client";
 ;
@@ -616,7 +622,7 @@ function ProductFeed({ initialProducts, token, userdata }) {
         setLoading(true);
         const nextPage = page + 1;
         // fetch new data
-        const newProducts = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$ec8a81__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["getProducts"])(nextPage);
+        const newProducts = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$data$3a$c244e8__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__["getProducts"])(nextPage);
         if (newProducts.length === 0) {
             setHasMore(false);
         } else {
@@ -655,7 +661,7 @@ function ProductFeed({ initialProducts, token, userdata }) {
         className: "flex flex-col items-center w-full",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-wrap justify-center items-center mt-3 gap-4",
+                className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
                 children: products && products?.map((product, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$_components$2f$DataCard$2f$DataCard$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         id: product.id,
                         image: product.images[0],
@@ -701,4 +707,4 @@ function ProductFeed({ initialProducts, token, userdata }) {
 }),
 ];
 
-//# sourceMappingURL=Documents_projects_crud-with-nextjs_frontend_app_6d4ea606._.js.map
+//# sourceMappingURL=Documents_projects_crud-with-nextjs_frontend_app_698e5117._.js.map

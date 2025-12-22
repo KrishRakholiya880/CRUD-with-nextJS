@@ -15,8 +15,8 @@ export default async function page({ searchParams }) {
     return <p className="mt-96 text-center text-3xl">Product Not Found</p>;
 
   return (
-    <div>
-      <div className="flex flex-wrap justify-center items-center">
+    <main className="flex flex-col items-center w-full mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {searchedProducts.map((product) => (
           <DataCard
             key={product.id}
@@ -30,6 +30,6 @@ export default async function page({ searchParams }) {
           />
         ))}
       </div>
-    </div>
+    </main>
   );
 }

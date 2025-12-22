@@ -47,44 +47,51 @@ export default async function ProductID({ params }) {
   const productData = await getProduct(productID);
 
   return (
-    <main className="max-w-9xl mx-auto px-4">
-      <div className="flex flex-wrap justify-center items-center">
-        <div className="w-full lg:w-6/12 px-3">
-          <div className="relative aspect-square">
+    <main className="max-w-7xl mx-auto px-4 py-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="w-full">
+          <div className="relative aspect-square max-w-md mx-auto">
             <Image
               src={productData.images[0]}
               fill
               quality={100}
-              className="w-full h-full object-contain"
+              className="object-contain"
               alt="productImage"
             />
           </div>
         </div>
-        <div className="w-full lg:w-6/12 text-2xl flex flex-col space-y-4 px-3">
+
+        <div className="flex flex-col space-y-3 text-base sm:text-lg lg:text-xl">
           <p>
-            <b>Title: </b>
-            {productData.title}
+            <b>Title:</b> {productData.title}
           </p>
+
           <p>
-            <b>Description: </b>
-            {productData.description}
+            <b>Description:</b> {productData.description}
           </p>
+
           <p>
-            <b>Category: </b>
-            {productData.category}
+            <b>Category:</b> {productData.category}
           </p>
+
           <p>
-            <b>Rating: </b>
-            {productData.rating}
+            <b>Rating:</b> ⭐ {productData.rating}
           </p>
-          <p className="mb-4">
-            <b>Price: </b>
-            {productData.price}
-          </p>
-          <div>
+
+          <p className="text-2xl font-semibold">₹{productData.price}</p>
+
+          <div className="pt-4">
             <Link
-              href={"/"}
-              className="text-xl px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-xl">
+              href="/"
+              className="
+            inline-block
+            px-6 py-3
+            text-base lg:text-lg
+            text-white bg-blue-500
+            hover:bg-blue-600
+            transition-all duration-300
+            rounded-xl
+          ">
               Back
             </Link>
           </div>

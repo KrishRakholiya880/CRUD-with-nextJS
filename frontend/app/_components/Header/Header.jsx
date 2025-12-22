@@ -1,77 +1,92 @@
+// SAME imports as before (no change)
 import React from "react";
-// Search Product Component
-import SearchProduct from "../SearchProduct/SearchProduct";
-// Logout Component
-import LogoutButton from "../LogoutButton/LogoutButton";
-// Get token & userdata
+// Cookie Actions
 import { GetToken } from "@/app/CookieAction/GetToken";
 import { GetUserData } from "@/app/CookieAction/GetUserData";
 // Link
 import Link from "next/link";
+// Image
 import Image from "next/image";
+// Component
+import SearchProduct from "../SearchProduct/SearchProduct";
+import LogoutButton from "../LogoutButton/LogoutButton";
+import MobileHeader from "./MobileMenu";
 
 export default async function Header() {
   const token = await GetToken();
   const userdata = await GetUserData();
+
   return (
-    <div className="sticky top-0 w-full z-50 dark:bg-white dark:text-black bg-black text-white">
-      <div className="max-w-9xl mx-auto px-4">
-        <div className="flex flex-wrap justify-center items-center">
-          <div className="w-full sm:w-2/12 px-3 text-center lg:text-start">
-            <Link href={"/"} className="text-3xl flex items-center">
-              <Image
-                src={"/logo.png"}
-                width={80}
-                height={80}
-                alt="myShop-logo"
-              />
+    <>
+      <header className="hidden lg:block sticky top-0 w-full z-50 dark:bg-white dark:text-black bg-black text-white shadow-md">
+        <div className="max-w-[1400px] mx-auto px-4 py-2 lg:py-0">
+          <div className="flex justify-between items-center">
+            <Link href="/" className="text-2xl flex items-center">
+              <div className="relative w-12 h-12">
+                <Image
+                  src="/logo.png"
+                  fill
+                  alt="myShop-logo"
+                  className="object-contain"
+                />
+              </div>
               <span className="ml-2 font-bold">MyShop</span>
             </Link>
-          </div>
-          <div className="w-full sm:w-6/12 px-3 text-center">
-            <div className="navbar">
-              <Link className="inline-block text-lg p-4" href={"/"} replace>
+            <nav className="flex items-center">
+              <Link
+                className="p-4 hover:text-blue-500 transition-colors duration-300"
+                href="/">
                 Home
               </Link>
-              <Link className="inline-block text-lg p-4" href={"/products"}>
+              <Link
+                className="p-4 hover:text-blue-500 transition-colors duration-300"
+                href="/products">
                 Products
               </Link>
-              <Link className="inline-block text-lg p-4" href={"/about"}>
+              <Link
+                className="p-4 hover:text-blue-500 transition-colors duration-300"
+                href="/about">
                 About
               </Link>
               {userdata && (
-                <Link className="inline-block text-lg p-4" href={"/user"}>
+                <Link
+                  className="p-4 hover:text-blue-500 transition-colors duration-300"
+                  href="/user">
                   User
                 </Link>
               )}
-              {userdata && userdata.role === "admin" && (
-                <Link className="inline-block text-lg p-4" href={"/admin"}>
+              {userdata?.role === "admin" && (
+                <Link
+                  className="p-4 hover:text-blue-500 transition-colors duration-300"
+                  href="/admin">
                   Dashboard
                 </Link>
               )}
+            </nav>
+            <div className="flex items-center gap-3">
+              <SearchProduct />
+              {token ? (
+                <LogoutButton />
+              ) : (
+                <>
+                  <Link
+                    href="/signup"
+                    className="px-4 py-2 bg-blue-600 rounded-lg">
+                    Sign up
+                  </Link>
+                  <Link
+                    href="/login"
+                    className="px-4 py-2 bg-blue-600 rounded-lg">
+                    Login
+                  </Link>
+                </>
+              )}
             </div>
           </div>
-          <div className="w-full sm:w-4/12 px-3 flex justify-end items-center space-x-2 text-end">
-            <SearchProduct />
-            {token ? (
-              <LogoutButton />
-            ) : (
-              <div className="flex items-center space-x-2">
-                <Link
-                  href={"/signup"}
-                  className="px-4 py-2 text-black bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-xl cursor-pointer">
-                  Sign up
-                </Link>
-                <Link
-                  href={"/login"}
-                  className="px-4 py-2 text-black bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-xl cursor-pointer">
-                  Login
-                </Link>
-              </div>
-            )}
-          </div>
         </div>
-      </div>
-    </div>
+      </header>
+
+      <MobileHeader token={token} userdata={userdata} />
+    </>
   );
 }

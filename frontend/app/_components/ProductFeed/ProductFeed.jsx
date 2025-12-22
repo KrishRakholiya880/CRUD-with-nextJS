@@ -64,7 +64,7 @@ export default function ProductFeed({ initialProducts, token, userdata }) {
 
   return (
     <main className="flex flex-col items-center w-full">
-      <div className="flex flex-wrap justify-center items-center mt-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {products &&
           products?.map((product, index) => (
             <DataCard

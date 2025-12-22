@@ -54,69 +54,83 @@ export default function Signup() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen w-full">
+    <div className="flex justify-center items-start min-h-screen w-full px-4 py-10 sm:py-0 sm:items-center">
       <Formik
         initialValues={initialValues}
         validationSchema={SignupSchema}
         onSubmit={handleSubmit}>
         {({ errors, touched }) => (
-          <div>
-            <Form className="w-[500px] h-auto p-5 rounded-3xl shadow-md dark:shadow-slate-300 shadow-slate-900 flex flex-col space-y-3 dark:bg-white text-black">
-              <h1 className="text-center text-3xl">Signup</h1>
-              <div className="flex flex-col justify-baseline items-start space-y-3">
-                <label htmlFor="username" className="text-balance">
-                  Username:
+          <div className="w-full flex justify-center">
+            <Form className=" w-full max-w-md p-5 sm:p-6 rounded-3xl shadow-md dark:shadow-slate-300 shadow-slate-900 flex flex-col space-y-4 dark:bg-white text-black">
+              <h1 className="text-center text-2xl sm:text-3xl font-semibold">
+                Signup
+              </h1>
+
+              {/* USERNAME */}
+              <div className="flex flex-col space-y-1.5">
+                <label htmlFor="username" className="text-sm sm:text-base">
+                  Username
                 </label>
                 <Field
                   type="text"
-                  className="border border-slate-300 w-full p-2 rounded-xl outline-0"
+                  className="border border-slate-300 w-full px-3 py-2.5 rounded-xl outline-0 text-base"
                   id="username"
                   name="username"
                   placeholder="Enter your name"
                 />
-                {errors.name && touched.name ? (
-                  <p className="text-red-500">{errors.name}</p>
-                ) : null}
+                {errors.name && touched.name && (
+                  <p className="text-red-500 text-xs sm:text-sm">
+                    {errors.name}
+                  </p>
+                )}
               </div>
-              <div className="flex flex-col justify-baseline items-start space-y-3">
-                <label htmlFor="email" className="text-balance">
-                  Email:
+
+              {/* EMAIL */}
+              <div className="flex flex-col space-y-1.5">
+                <label htmlFor="email" className="text-sm sm:text-base">
+                  Email
                 </label>
                 <Field
                   type="email"
-                  className="border border-slate-300 w-full p-2 rounded-xl outline-0"
+                  className="border border-slate-300 w-full px-3 py-2.5 rounded-xl outline-0 text-base"
                   id="email"
                   name="email"
                   placeholder="Enter your email"
                 />
-                {errors.email && touched.email ? (
-                  <p className="text-red-500">{errors.email}</p>
-                ) : null}
+                {errors.email && touched.email && (
+                  <p className="text-red-500 text-xs sm:text-sm">
+                    {errors.email}
+                  </p>
+                )}
               </div>
-              <div className="flex flex-col justify-baseline items-start space-y-3">
-                <label htmlFor="password" className="text-balance">
-                  Password:
+
+              {/* PASSWORD */}
+              <div className="flex flex-col space-y-1.5">
+                <label htmlFor="password" className="text-sm sm:text-base">
+                  Password
                 </label>
                 <Field
                   type="password"
-                  className="border border-slate-300 w-full p-2 rounded-xl outline-0"
+                  className="border border-slate-300 w-full px-3 py-2.5 rounded-xl outline-0 text-base"
                   id="password"
                   name="password"
                   placeholder="Enter your password"
                 />
-                {errors.password && touched.password ? (
-                  <p className="text-red-500">{errors.password}</p>
-                ) : null}
+                {errors.password && touched.password && (
+                  <p className="text-red-500 text-xs sm:text-sm">
+                    {errors.password}
+                  </p>
+                )}
               </div>
-              <div>
-                <button
-                  type="submit"
-                  className="px-3 py-1.5 text-white border-2 border-blue-500 hover:border-blue-600 bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-md">
-                  Sign up
-                </button>
-              </div>
-              <p className="my-3">
-                Already a user? &nbsp;
+
+              <button
+                type="submit"
+                className=" mt-2 w-full py-2.5 text-base text-white border-2 border-blue-500 bg-blue-500 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 rounded-xl">
+                Sign up
+              </button>
+
+              <p className="text-center text-sm sm:text-base">
+                Already a user?
                 <Link className="text-blue-500 font-bold" href="/login">
                   Login
                 </Link>

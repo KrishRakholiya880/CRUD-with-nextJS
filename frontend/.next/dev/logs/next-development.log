@@ -1,6 +1,6 @@
-[00:00:06.445] Server  LOG      ✓ Ready in 4.3s
-[00:00:09.477] Server  LOG      ○ Compiling / ...
-[00:00:35.915] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:06.017] Server  LOG      ✓ Ready in 4s
+[00:00:09.091] Server  LOG      ○ Compiling / ...
+[00:00:22.534] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -31,6 +31,7 @@ It can also happen if the client has a browser extension installed which messes 
                       <script>
                       <script>
                       <script>
+                      <script>
                       <RootLayout>
                         <html lang="en">
                           <body
@@ -39,3 +40,4 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
+[00:00:22.534] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
