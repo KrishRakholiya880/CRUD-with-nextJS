@@ -2,7 +2,7 @@ module.exports = [
 "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"00c707640003e01f52c069aa3164f89264a8a5a976":"RemoveToken"},"",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"000729e2bb66d29205d81d87ca471695c07a7f82dc":"RemoveToken"},"",""] */ __turbopack_context__.s([
     "RemoveToken",
     ()=>RemoveToken
 ]);
@@ -28,12 +28,12 @@ async function RemoveToken() {
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     RemoveToken
 ]);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(RemoveToken, "00c707640003e01f52c069aa3164f89264a8a5a976", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(RemoveToken, "000729e2bb66d29205d81d87ca471695c07a7f82dc", null);
 }),
 "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/SetToken.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"7f54da364af77eb143421518af76ed1b0c0f4d1837":"SetToken"},"",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"7fd400954ee4aafc15f6e50801c93349eb2b5d82e4":"SetToken"},"",""] */ __turbopack_context__.s([
     "SetToken",
     ()=>SetToken
 ]);
@@ -53,12 +53,12 @@ const SetToken = async (token)=>{
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     SetToken
 ]);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(SetToken, "7f54da364af77eb143421518af76ed1b0c0f4d1837", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(SetToken, "7fd400954ee4aafc15f6e50801c93349eb2b5d82e4", null);
 }),
 "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/SetUserData.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"7f4faf3781b45d7c324c2261d4675cd98fa512bbc6":"SetUserData"},"",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"7f269b4e5a4397bde45bc54d1ca92dd6140c00724f":"SetUserData"},"",""] */ __turbopack_context__.s([
     "SetUserData",
     ()=>SetUserData
 ]);
@@ -79,7 +79,7 @@ const SetUserData = async (userdata)=>{
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     SetUserData
 ]);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(SetUserData, "7f4faf3781b45d7c324c2261d4675cd98fa512bbc6", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(SetUserData, "7f269b4e5a4397bde45bc54d1ca92dd6140c00724f", null);
 }),
 "[project]/Documents/projects/crud-with-nextjs/frontend/.next-internal/server/app/signup/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/SetToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/SetUserData.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript) <locals>", ((__turbopack_context__) => {
 "use strict";
@@ -100,15 +100,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$cru
 "use strict";
 
 __turbopack_context__.s([
-    "00afeaa5219a1d936e1d3b0b798953d24cf43858e9",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$GetUserData$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GetUserData"],
-    "00c707640003e01f52c069aa3164f89264a8a5a976",
+    "000729e2bb66d29205d81d87ca471695c07a7f82dc",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$RemoveToken$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["RemoveToken"],
-    "7f4faf3781b45d7c324c2261d4675cd98fa512bbc6",
+    "001bfb451e0cd8ef48a9fc031e4920c395828e3cae",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$GetUserData$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GetUserData"],
+    "7f269b4e5a4397bde45bc54d1ca92dd6140c00724f",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$SetUserData$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SetUserData"],
-    "7f54da364af77eb143421518af76ed1b0c0f4d1837",
+    "7fd400954ee4aafc15f6e50801c93349eb2b5d82e4",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$SetToken$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SetToken"],
-    "7f7aea2c99e154c245cb67c30d33d9901f869da133",
+    "7fe56e7b0b4adaf973950f504a471d58d33533cf37",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$GetToken$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GetToken"]
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f2e$next$2d$internal$2f$server$2f$app$2f$signup$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$GetToken$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE1__$3d3e$__$225b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$GetUserData$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE2__$3d3e$__$225b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$RemoveToken$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE3__$3d3e$__$225b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$SetToken$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29222c$__ACTIONS_MODULE4__$3d3e$__$225b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$SetUserData$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i('[project]/Documents/projects/crud-with-nextjs/frontend/.next-internal/server/app/signup/page/actions.js { ACTIONS_MODULE0 => "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js [app-rsc] (ecmascript)", ACTIONS_MODULE1 => "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js [app-rsc] (ecmascript)", ACTIONS_MODULE2 => "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js [app-rsc] (ecmascript)", ACTIONS_MODULE3 => "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/SetToken.js [app-rsc] (ecmascript)", ACTIONS_MODULE4 => "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/SetUserData.js [app-rsc] (ecmascript)" } [app-rsc] (server actions loader, ecmascript) <locals>');

@@ -134,7 +134,7 @@ function DataCard({ id, image, title, description, category, rating, price, onRe
                         lineNumber: 72,
                         columnNumber: 9
                     }, this),
-                    " ₹",
+                    " $",
                     price
                 ]
             }, void 0, true, {

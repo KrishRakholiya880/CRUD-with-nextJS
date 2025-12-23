@@ -47,7 +47,6 @@ export default function Login() {
     email: "",
     password: "",
   };
-
   return (
     <div className="flex justify-center items-start min-h-screen w-full px-4 py-10 sm:py-0 sm:items-center">
       <Formik

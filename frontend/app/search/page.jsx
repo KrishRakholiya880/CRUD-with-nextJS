@@ -4,6 +4,18 @@ import { searchProducts } from "../httpServices/httpServices";
 // Component
 import DataCard from "../_components/DataCard/DataCard";
 
+// metadata
+export async function generateMetadata({ searchParams }) {
+  const { q } = await searchParams;
+
+  return {
+    title: q,
+    alternates: {
+      canonical: `/products/search/${q}`,
+    },
+  };
+}
+
 export default async function page({ searchParams }) {
   const { q } = await searchParams;
 

@@ -168,7 +168,7 @@ async function ProductID({ params }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-2xl font-semibold",
                             children: [
-                                "₹",
+                                "$",
                                 productData.price
                             ]
                         }, void 0, true, {
@@ -180,7 +180,7 @@ async function ProductID({ params }) {
                             className: "pt-4",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/",
-                                className: " inline-block px-6 py-3 text-base lg:text-lg text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-xl ",
+                                className: "inline-blockpx-6 py-3text-base lg:text-lgtext-white bg-blue-500hover:bg-blue-600transition-all duration-300rounded-xl",
                                 children: "Back"
                             }, void 0, false, {
                                 fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/products/[productID]/page.jsx",

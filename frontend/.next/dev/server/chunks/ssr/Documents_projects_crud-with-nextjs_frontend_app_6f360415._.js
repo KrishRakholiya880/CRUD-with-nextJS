@@ -2,7 +2,7 @@ module.exports = [
 "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"7f7aea2c99e154c245cb67c30d33d9901f869da133":"GetToken"},"",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"7fe56e7b0b4adaf973950f504a471d58d33533cf37":"GetToken"},"",""] */ __turbopack_context__.s([
     "GetToken",
     ()=>GetToken
 ]);
@@ -23,12 +23,12 @@ const GetToken = async ()=>{
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     GetToken
 ]);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(GetToken, "7f7aea2c99e154c245cb67c30d33d9901f869da133", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(GetToken, "7fe56e7b0b4adaf973950f504a471d58d33533cf37", null);
 }),
 "[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"00afeaa5219a1d936e1d3b0b798953d24cf43858e9":"GetUserData"},"",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"001bfb451e0cd8ef48a9fc031e4920c395828e3cae":"GetUserData"},"",""] */ __turbopack_context__.s([
     "GetUserData",
     ()=>GetUserData
 ]);
@@ -55,7 +55,7 @@ async function GetUserData() {
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
     GetUserData
 ]);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(GetUserData, "00afeaa5219a1d936e1d3b0b798953d24cf43858e9", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(GetUserData, "001bfb451e0cd8ef48a9fc031e4920c395828e3cae", null);
 }),
 "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/SearchProduct/SearchProduct.js [app-rsc] (client reference proxy) <module evaluation>", ((__turbopack_context__) => {
 "use strict";
@@ -429,6 +429,9 @@ const metadata = {
         description: "Explore our catalog of top-rated products.",
         siteName: "MyShop",
         type: "website",
+        alternates: {
+            canonical: `/`
+        },
         images: [
             {
                 // url: "/logo.png",
@@ -464,24 +467,24 @@ function RootLayout({ children }) {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$_components$2f$Header$2f$Header$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/layout.js",
-                    lineNumber: 54,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, this),
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$_components$2f$Footer$2f$Footer$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/layout.js",
-                    lineNumber: 56,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/layout.js",
-            lineNumber: 53,
+            lineNumber: 55,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/layout.js",
-        lineNumber: 52,
+        lineNumber: 54,
         columnNumber: 5
     }, this);
 }

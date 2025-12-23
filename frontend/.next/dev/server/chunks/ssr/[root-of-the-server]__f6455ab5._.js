@@ -108,7 +108,9 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$Document
 
 __turbopack_context__.s([
     "default",
-    ()=>page
+    ()=>page,
+    "generateMetadata",
+    ()=>generateMetadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Documents/projects/crud-with-nextjs/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js [app-rsc] (ecmascript)");
@@ -120,6 +122,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$cru
 ;
 ;
 ;
+async function generateMetadata({ searchParams }) {
+    const { q } = await searchParams;
+    return {
+        title: q,
+        alternates: {
+            canonical: `/products/search/${q}`
+        }
+    };
+}
 async function page({ searchParams }) {
     const { q } = await searchParams;
     const res = await fetch((0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$httpServices$2f$httpServices$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["searchProducts"])(q));
@@ -130,7 +141,7 @@ async function page({ searchParams }) {
         children: "Product Not Found"
     }, void 0, false, {
         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/search/page.jsx",
-        lineNumber: 15,
+        lineNumber: 27,
         columnNumber: 12
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -147,17 +158,17 @@ async function page({ searchParams }) {
                     price: product.price
                 }, product.id, false, {
                     fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/search/page.jsx",
-                    lineNumber: 21,
+                    lineNumber: 33,
                     columnNumber: 11
                 }, this))
         }, void 0, false, {
             fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/search/page.jsx",
-            lineNumber: 19,
+            lineNumber: 31,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/search/page.jsx",
-        lineNumber: 18,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }

@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header/Header";
 import Footer from "./_components/Footer/Footer";
@@ -19,6 +18,9 @@ export const metadata = {
     description: "Explore our catalog of top-rated products.",
     siteName: "MyShop",
     type: "website",
+    alternates: {
+      canonical: `/`,
+    },
     images: [
       {
         // url: "/logo.png",
