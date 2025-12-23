@@ -79,6 +79,7 @@ export default function ProductFeed({ initialProducts, token, userdata }) {
               token={token}
               userdata={userdata}
               priority={index < 4}
+              age
             />
           ))}
       </div>

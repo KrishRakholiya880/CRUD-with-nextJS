@@ -108,7 +108,7 @@ function AddProductModal({ productToEdit }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mt-10 ml-20",
+                className: "my-4 ml-52",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     className: "px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-xl cursor-pointer",
                     onClick: ()=>setIsOpen(!isOpen),
@@ -521,7 +521,7 @@ function DataCard({ id, image, title, description, category, rating, price, onRe
                         lineNumber: 72,
                         columnNumber: 9
                     }, this),
-                    " ₹",
+                    " $",
                     price
                 ]
             }, void 0, true, {
@@ -672,7 +672,8 @@ function ProductFeed({ initialProducts, token, userdata }) {
                         price: product.price,
                         token: token,
                         userdata: userdata,
-                        priority: index < 4
+                        priority: index < 4,
+                        age: true
                     }, `${product.id} - ${index}`, false, {
                         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/ProductFeed/ProductFeed.jsx",
                         lineNumber: 70,
@@ -689,12 +690,12 @@ function ProductFeed({ initialProducts, token, userdata }) {
                     children: "Loading more items..."
                 }, void 0, false, {
                     fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/ProductFeed/ProductFeed.jsx",
-                    lineNumber: 87,
+                    lineNumber: 88,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/ProductFeed/ProductFeed.jsx",
-                lineNumber: 85,
+                lineNumber: 86,
                 columnNumber: 7
             }, this)
         ]

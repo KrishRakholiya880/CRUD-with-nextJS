@@ -71,12 +71,12 @@ export default async function Header() {
                 <>
                   <Link
                     href="/signup"
-                    className="px-4 py-2 bg-blue-600 rounded-lg">
+                    className="px-4 py-2 text-white bg-blue-600 rounded-lg">
                     Sign up
                   </Link>
                   <Link
                     href="/login"
-                    className="px-4 py-2 bg-blue-600 rounded-lg">
+                    className="px-4 py-2 text-white bg-blue-600 rounded-lg">
                     Login
                   </Link>
                 </>

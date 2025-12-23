@@ -1,0 +1,50 @@
+{
+  "node": {
+    "7f7aea2c99e154c245cb67c30d33d9901f869da133": {
+      "workers": {
+        "app/products/[productID]/page": {
+          "moduleId": "[project]/Documents/projects/crud-with-nextjs/frontend/.next-internal/server/app/products/[productID]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "GetToken",
+          "filename": "Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js"
+        }
+      },
+      "layer": {
+        "app/products/[productID]/page": "rsc"
+      },
+      "exportedName": "GetToken",
+      "filename": "Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js"
+    },
+    "00afeaa5219a1d936e1d3b0b798953d24cf43858e9": {
+      "workers": {
+        "app/products/[productID]/page": {
+          "moduleId": "[project]/Documents/projects/crud-with-nextjs/frontend/.next-internal/server/app/products/[productID]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "GetUserData",
+          "filename": "Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js"
+        }
+      },
+      "layer": {
+        "app/products/[productID]/page": "rsc"
+      },
+      "exportedName": "GetUserData",
+      "filename": "Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js"
+    },
+    "00c707640003e01f52c069aa3164f89264a8a5a976": {
+      "workers": {
+        "app/products/[productID]/page": {
+          "moduleId": "[project]/Documents/projects/crud-with-nextjs/frontend/.next-internal/server/app/products/[productID]/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "RemoveToken",
+          "filename": "Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js"
+        }
+      },
+      "layer": {
+        "app/products/[productID]/page": "action-browser"
+      },
+      "exportedName": "RemoveToken",
+      "filename": "Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js"
+    }
+  },
+  "edge": {}
+}

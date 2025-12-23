@@ -73,7 +73,7 @@ export default function AddProductModal({ productToEdit }) {
   return (
     <div>
       {/* Add Product Button */}
-      <div className="mt-10 ml-20">
+      <div className="my-4 ml-52">
         <button
           className="px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}>

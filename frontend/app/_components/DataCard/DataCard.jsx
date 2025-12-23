@@ -69,7 +69,7 @@ export default function DataCard({
       </p>
 
       <p className="font-semibold text-lg">
-        <b>Price:</b> ₹{price}
+        <b>Price:</b> ${price}
       </p>
 
       {token && userdata.role === "admin" && (

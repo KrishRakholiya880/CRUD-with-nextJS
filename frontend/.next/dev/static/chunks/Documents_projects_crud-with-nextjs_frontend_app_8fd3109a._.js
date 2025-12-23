@@ -59,11 +59,11 @@ var _s = __turbopack_context__.k.signature();
 function AddProductModal(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(27);
-    if ($[0] !== "61b70817dd0b5987501f318e5f2c7464cabbfa92ae4328dc26e1cccc5ccbf0ff") {
+    if ($[0] !== "404c11813e06e6c51a31ce094d7eaa31c6dbf7a783383be6c018975c9f6e3abe") {
         for(let $i = 0; $i < 27; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "61b70817dd0b5987501f318e5f2c7464cabbfa92ae4328dc26e1cccc5ccbf0ff";
+        $[0] = "404c11813e06e6c51a31ce094d7eaa31c6dbf7a783383be6c018975c9f6e3abe";
     }
     const { productToEdit } = t0;
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -176,7 +176,7 @@ function AddProductModal(t0) {
     let t7;
     if ($[12] !== isOpen) {
         t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "mt-10 ml-20",
+            className: "my-4 ml-52",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 className: "px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-xl cursor-pointer",
                 onClick: {
@@ -186,7 +186,7 @@ function AddProductModal(t0) {
             }, void 0, false, {
                 fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/AddProductModal/AddProductModal.js",
                 lineNumber: 134,
-                columnNumber: 39
+                columnNumber: 38
             }, this)
         }, void 0, false, {
             fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/AddProductModal/AddProductModal.js",
@@ -533,11 +533,11 @@ var _s = __turbopack_context__.k.signature();
 function DataCard(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(35);
-    if ($[0] !== "7a464350670a69e66ae7347cfdc92db80d5261268cdd027de186406734346b59") {
+    if ($[0] !== "f62ee1e2132ae78f78c08d9c4ee1c621b70da4785b5ae6406b28a04f8407ee65") {
         for(let $i = 0; $i < 35; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "7a464350670a69e66ae7347cfdc92db80d5261268cdd027de186406734346b59";
+        $[0] = "f62ee1e2132ae78f78c08d9c4ee1c621b70da4785b5ae6406b28a04f8407ee65";
     }
     const { id, image, title, description, category, rating, price, onRemove, token, userdata } = t0;
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -733,7 +733,7 @@ function DataCard(t0) {
             className: "font-semibold text-lg",
             children: [
                 t14,
-                " ₹",
+                " $",
                 price
             ]
         }, void 0, true, {
@@ -960,7 +960,8 @@ function ProductFeed(param) {
                         price: product.price,
                         token: token,
                         userdata: userdata,
-                        priority: index < 4
+                        priority: index < 4,
+                        age: true
                     }, `${product.id} - ${index}`, false, {
                         fileName: "[project]/Documents/projects/crud-with-nextjs/frontend/app/_components/ProductFeed/ProductFeed.jsx",
                         lineNumber: 64,
