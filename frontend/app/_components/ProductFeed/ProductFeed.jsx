@@ -2,7 +2,10 @@
 
 import React, { useCallback, useEffect, useState } from "react";
 import DataCard from "../DataCard/DataCard";
-import { getProducts } from "@/app/action/ProductActions";
+import {
+  getProductsAction,
+  resetLocalCache,
+} from "@/app/action/ProductActions";
 import { usePathname } from "next/navigation";
 
 export default function ProductFeed({ initialProducts, token, userdata }) {
@@ -19,6 +22,13 @@ export default function ProductFeed({ initialProducts, token, userdata }) {
     if (typeof window !== "undefined") {
       window.history.replaceState(null, "", pathname);
     }
+
+    const clearCache = async () => {
+      await resetLocalCache();
+      console.log("Server cache cleared!");
+    };
+
+    clearCache();
   }, []);
 
   // Function to load more
@@ -28,7 +38,7 @@ export default function ProductFeed({ initialProducts, token, userdata }) {
     const nextPage = page + 1;
 
     // fetch new data
-    const newProducts = await getProducts(nextPage);
+    const newProducts = await getProductsAction(nextPage);
 
     if (newProducts.length === 0) {
       setHasMore(false);
@@ -79,7 +89,6 @@ export default function ProductFeed({ initialProducts, token, userdata }) {
               token={token}
               userdata={userdata}
               priority={index < 4}
-              age
             />
           ))}
       </div>

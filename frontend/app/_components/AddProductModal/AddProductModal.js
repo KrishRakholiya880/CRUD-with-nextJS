@@ -43,6 +43,21 @@ export default function AddProductModal({ productToEdit }) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+  // handleChange function for image
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setFormData((prev) => ({
+        ...prev,
+        images: [reader.result], // BASE64 STRING
+      }));
+    };
+
+    reader.readAsDataURL(file);
+  };
 
   const handleClose = () => {
     setIsOpen(false);
@@ -105,14 +120,7 @@ export default function AddProductModal({ productToEdit }) {
                     name="images"
                     className="border border-slate-300 w-full p-2 rounded-xl outline-0"
                     placeholder="Select an image"
-                    onChange={(e) =>
-                      setFormData((prev) => ({
-                        ...prev,
-                        images: e.target.files[0]
-                          ? [URL.createObjectURL(e.target.files[0])]
-                          : [],
-                      }))
-                    }
+                    onChange={handleImageChange}
                   />
                 </div>
                 <div className="flex flex-col gap-2">

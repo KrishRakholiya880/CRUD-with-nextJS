@@ -1,7 +1,7 @@
 // Components
 import AddProductModal from "./_components/AddProductModal/AddProductModal";
 // Actions
-import { getProducts } from "./action/ProductActions";
+import { getProductsAction } from "./action/ProductActions";
 // Get token & userdata
 import { GetToken } from "./CookieAction/GetToken";
 import { GetUserData } from "./CookieAction/GetUserData";
@@ -40,7 +40,7 @@ const jsonLd = {
 
 export default async function Home({ searchParams }) {
   // Get all products
-  const initialProducts = await getProducts(1);
+  const initialProducts = await getProductsAction(1);
 
   // searchParams
   const searchParam = await searchParams;

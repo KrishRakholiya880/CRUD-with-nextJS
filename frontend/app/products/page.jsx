@@ -1,7 +1,7 @@
 // Components
 import ProductFeed from "../_components/ProductFeed/ProductFeed";
 // Get all products Action
-import { getProducts } from "../action/ProductActions";
+import { getProductsAction } from "../action/ProductActions";
 
 export const dynamic = "force-static";
 export const revalidate = 60;
@@ -28,7 +28,7 @@ export const metadata = {
 
 export default async function Products() {
   // Get all products
-  const initialProducts = await getProducts(1);
+  const initialProducts = await getProductsAction(1);
 
   return (
     <main>

@@ -138,7 +138,7 @@ const jsonLd = {
 };
 async function Home({ searchParams }) {
     // Get all products
-    const initialProducts = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$ProductActions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getProducts"])(1);
+    const initialProducts = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$ProductActions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getProductsAction"])(1);
     // searchParams
     const searchParam = await searchParams;
     const editId = searchParam?.edit;

@@ -12,17 +12,8 @@ import {
 
 const localCache = [];
 
-//Get All Products Action
-// export async function getAllProduct() {
-//   const res = await fetch(fetchAllProducts(0, 10), {
-//     next: { revalidate: 3600 },
-//   });
-//   const resData = await res.json();
-//   return (products = resData.products);
-// }
-
 // Get all products for pagination
-export async function getProducts(page = 1, limit = 15) {
+export async function getProductsAction(page = 1, limit = 15) {
   const skip = (page - 1) * limit;
 
   try {
@@ -99,9 +90,20 @@ export async function deleteProductAction(id) {
       method: "DELETE",
     });
     const resData = await res.json();
+    const index = localCache.findIndex((product) => product.id === id);
+
+    if (index !== -1) {
+      localCache.splice(index, 1);
+    }
+    revalidatePath("/");
     return true;
   } catch (error) {
     console.error(error);
     return false;
   }
+}
+
+export async function resetLocalCache() {
+  localCache.length = 0;
+  return true;
 }

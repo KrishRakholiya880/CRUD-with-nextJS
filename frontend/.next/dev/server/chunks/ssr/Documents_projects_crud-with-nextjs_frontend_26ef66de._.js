@@ -87,13 +87,15 @@ const userProtected = ()=>{
 "[project]/Documents/projects/crud-with-nextjs/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"40584b262c8fef9cc4030920965204687a6cae04b2":"updateProductAction","40a0a517ce778919af7c3fd2b4e6c993424b8e562e":"deleteProductAction","40ca044e758ee36e8071e1983fc09404fe92105590":"AddProductAction","602fd68cd5e488ac2f4691568622f9e571f5ba314f":"getProducts"},"",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"00971811f4e3fc0d0a5b75b9e911e39908f7daf76e":"resetLocalCache","40584b262c8fef9cc4030920965204687a6cae04b2":"updateProductAction","40a0a517ce778919af7c3fd2b4e6c993424b8e562e":"deleteProductAction","40ca044e758ee36e8071e1983fc09404fe92105590":"AddProductAction","603e2471de593e5246d96bfd9cdd330800f960a018":"getProductsAction"},"",""] */ __turbopack_context__.s([
     "AddProductAction",
     ()=>AddProductAction,
     "deleteProductAction",
     ()=>deleteProductAction,
-    "getProducts",
-    ()=>getProducts,
+    "getProductsAction",
+    ()=>getProductsAction,
+    "resetLocalCache",
+    ()=>resetLocalCache,
     "updateProductAction",
     ()=>updateProductAction
 ]);
@@ -109,7 +111,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$cru
 ;
 ;
 const localCache = [];
-async function getProducts(page = 1, limit = 15) {
+async function getProductsAction(page = 1, limit = 15) {
     const skip = (page - 1) * limit;
     try {
         const res = await fetch((0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$httpServices$2f$httpServices$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["fetchAllProducts"])(skip, limit), {
@@ -181,23 +183,34 @@ async function deleteProductAction(id) {
             method: "DELETE"
         });
         const resData = await res.json();
+        const index = localCache.findIndex((product)=>product.id === id);
+        if (index !== -1) {
+            localCache.splice(index, 1);
+        }
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])("/");
         return true;
     } catch (error) {
         console.error(error);
         return false;
     }
 }
+async function resetLocalCache() {
+    localCache.length = 0;
+    return true;
+}
 ;
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$action$2d$validate$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["ensureServerEntryExports"])([
-    getProducts,
+    getProductsAction,
     AddProductAction,
     updateProductAction,
-    deleteProductAction
+    deleteProductAction,
+    resetLocalCache
 ]);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getProducts, "602fd68cd5e488ac2f4691568622f9e571f5ba314f", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getProductsAction, "603e2471de593e5246d96bfd9cdd330800f960a018", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(AddProductAction, "40ca044e758ee36e8071e1983fc09404fe92105590", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateProductAction, "40584b262c8fef9cc4030920965204687a6cae04b2", null);
 (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(deleteProductAction, "40a0a517ce778919af7c3fd2b4e6c993424b8e562e", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(resetLocalCache, "00971811f4e3fc0d0a5b75b9e911e39908f7daf76e", null);
 }),
 "[project]/Documents/projects/crud-with-nextjs/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript) <locals>", ((__turbopack_context__) => {
 "use strict";
@@ -217,6 +230,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$cru
 ;
 ;
 ;
+;
+;
 }),
 "[project]/Documents/projects/crud-with-nextjs/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/GetUserData.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/CookieAction/RemoveToken.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/Documents/projects/crud-with-nextjs/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -226,14 +241,16 @@ __turbopack_context__.s([
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$RemoveToken$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["RemoveToken"],
     "001bfb451e0cd8ef48a9fc031e4920c395828e3cae",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$GetUserData$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GetUserData"],
+    "00971811f4e3fc0d0a5b75b9e911e39908f7daf76e",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$ProductActions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["resetLocalCache"],
     "40584b262c8fef9cc4030920965204687a6cae04b2",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$ProductActions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["updateProductAction"],
     "40a0a517ce778919af7c3fd2b4e6c993424b8e562e",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$ProductActions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["deleteProductAction"],
     "40ca044e758ee36e8071e1983fc09404fe92105590",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$ProductActions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["AddProductAction"],
-    "602fd68cd5e488ac2f4691568622f9e571f5ba314f",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$ProductActions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getProducts"],
+    "603e2471de593e5246d96bfd9cdd330800f960a018",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$action$2f$ProductActions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getProductsAction"],
     "7fe56e7b0b4adaf973950f504a471d58d33533cf37",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$app$2f$CookieAction$2f$GetToken$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["GetToken"]
 ]);

@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <main className="flex justify-center items-center h-screen w-full">
+    <main className="flex-1 w-full flex justify-center py-20 px-4">
       <h1 className="text-4xl">About Page</h1>
     </main>
   );
