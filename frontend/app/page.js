@@ -63,7 +63,7 @@ export default async function Home({ searchParams }) {
       />
       <div className="max-w-9xl mx-auto px-4">
         <div className="my-8">
-          <h1 className="text-center text-4xl mb-2">Welcome to MyShop</h1>
+          <h1 className="text-center text-4xl mb-3">Welcome to MyShop</h1>
           <p className="max-w-xl mx-auto text-center">
             Welcome to MyShop! Discover the latest trends in fashion,
             high-performance electronics, and home essentials.
