@@ -10,15 +10,17 @@ export default function Footer() {
           {/* LOGO */}
           <div className="w-full md:w-6/12 lg:w-4/12 flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <div className="relative w-12 h-12">
-                <Image
-                  src="/logo.png"
-                  alt="MyShop Logo"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-xl font-bold">MyShop</span>
+              <Link href={"/"} className="flex items-center gap-1">
+                <div className="relative w-12 h-12">
+                  <Image
+                    src="/logo.png"
+                    alt="MyShop Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-xl font-bold">MyShop</span>
+              </Link>
             </div>
             <p className="text-sm text-gray-400 dark:text-gray-600 w-full lg:max-w-xs">
               Your trusted online store for quality products and great deals.
@@ -37,9 +39,6 @@ export default function Footer() {
             <Link href="/about" className="hover:text-blue-500 transition">
               About
             </Link>
-            <Link href="/contact" className="hover:text-blue-500 transition">
-              Contact
-            </Link>
           </div>
 
           {/* SUBSCRIBE */}
@@ -53,9 +52,9 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-l-xl outline-none text-black border border-gray-300"
+                className="w-full px-4 py-2 rounded-l-xl outline-none border border-gray-300"
               />
-              <button className="px-6 py-2 bg-blue-600 text-white rounded-r-xl hover:bg-blue-700 transition">
+              <button className="px-6 py-2 bg-blue-600 text-white rounded-r-xl hover:bg-blue-700 transition cursor-pointer">
                 Subscribe
               </button>
             </div>

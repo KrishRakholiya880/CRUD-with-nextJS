@@ -75,7 +75,7 @@ export default function DataCard({
       {token && userdata.role === "admin" && (
         <div className="flex flex-col sm:flex-row gap-3 pt-3">
           <button
-            className="flex-1 py-2 text-sm lg:text-base bg-green-500 border-2 border-green-500 rounded-xl transition-all hover:bg-transparent"
+            className="flex-1 py-2 text-sm lg:text-base bg-green-500 border-2 border-green-500 rounded-xl transition-all hover:bg-transparent cursor-pointer"
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -85,7 +85,7 @@ export default function DataCard({
           </button>
 
           <button
-            className="flex-1 py-2 text-sm lg:text-base bg-red-500 border-2 border-red-500 rounded-xl transition-all hover:bg-transparent"
+            className="flex-1 py-2 text-sm lg:text-base bg-red-500 border-2 border-red-500 rounded-xl transition-all hover:bg-transparent cursor-pointer"
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();

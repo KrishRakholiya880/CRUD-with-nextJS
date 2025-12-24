@@ -26,11 +26,11 @@ var _s = __turbopack_context__.k.signature();
 function DataCard(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(35);
-    if ($[0] !== "f62ee1e2132ae78f78c08d9c4ee1c621b70da4785b5ae6406b28a04f8407ee65") {
+    if ($[0] !== "8a79d7866b250a924bea5f6b412d1905d446def59d229ff8ba50745bd9a5722e") {
         for(let $i = 0; $i < 35; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "f62ee1e2132ae78f78c08d9c4ee1c621b70da4785b5ae6406b28a04f8407ee65";
+        $[0] = "8a79d7866b250a924bea5f6b412d1905d446def59d229ff8ba50745bd9a5722e";
     }
     const { id, image, title, description, category, rating, price, onRemove, token, userdata } = t0;
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
@@ -245,7 +245,7 @@ function DataCard(t0) {
             className: "flex flex-col sm:flex-row gap-3 pt-3",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "flex-1 py-2 text-sm lg:text-base bg-green-500 border-2 border-green-500 rounded-xl transition-all hover:bg-transparent",
+                    className: "flex-1 py-2 text-sm lg:text-base bg-green-500 border-2 border-green-500 rounded-xl transition-all hover:bg-transparent cursor-pointer",
                     onClick: {
                         "DataCard[<button>.onClick]": (e)=>{
                             e.preventDefault();
@@ -262,7 +262,7 @@ function DataCard(t0) {
                     columnNumber: 103
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$projects$2f$crud$2d$with$2d$nextjs$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                    className: "flex-1 py-2 text-sm lg:text-base bg-red-500 border-2 border-red-500 rounded-xl transition-all hover:bg-transparent",
+                    className: "flex-1 py-2 text-sm lg:text-base bg-red-500 border-2 border-red-500 rounded-xl transition-all hover:bg-transparent cursor-pointer",
                     onClick: {
                         "DataCard[<button>.onClick]": (e_0)=>{
                             e_0.preventDefault();

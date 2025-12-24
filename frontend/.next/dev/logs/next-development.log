@@ -1,5 +1,286 @@
-[00:00:06.901] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:07.942] Server  LOG      ✓ Ready in 5.3s
-[00:00:11.131] Server  LOG      ○ Compiling / ...
-[00:00:28.055] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:28.055] Browser LOG     Server cache cleared!
+[00:00:09.876] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:11.015] Server  LOG      ✓ Ready in 6.8s
+[00:00:18.828] Server  LOG      ○ Compiling / ...
+[00:00:59.425] Browser LOG     Server cache cleared!
+[00:01:25.591] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:37.640] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:37.640] Browser LOG     Server cache cleared!
+[00:03:40.304] Browser ERROR   unhandledRejection: TypeError: onRemove is not a function
+[00:03:44.744] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:44.745] Browser LOG     Server cache cleared!
+[00:04:54.883] Server  LOG      ✓ Compiled in 336ms
+[00:05:00.726] Server  LOG      ✓ Compiled in 361ms
+[00:13:30.014] Server  LOG      ✓ Compiled in 677ms
+[00:13:33.095] Server  LOG      ✓ Compiled in 474ms
+[00:13:33.419] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]]
+[00:13:39.002] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Documents...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="min-h-screen flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:13:39.002] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:13:39.096] Browser LOG     Server cache cleared!
+[00:13:55.428] Browser LOG     Server cache cleared!
+[00:14:12.622] Server  LOG      ✓ Compiled in 254ms
+[00:14:17.019] Server  LOG      ✓ Compiled in 338ms
+[00:14:21.331] Server  LOG      ✓ Compiled in 229ms
+[00:14:25.836] Server  LOG      ✓ Compiled in 376ms
+[00:14:28.486] Server  LOG      ✓ Compiled in 255ms
+[00:14:35.895] Server  LOG      ✓ Compiled in 324ms
+[00:14:43.152] Server  LOG      ✓ Compiled in 135ms
+[00:14:54.002] Server  LOG      ✓ Compiled in 115ms
+[00:15:08.104] Server  LOG      ✓ Compiled in 125ms
+[00:15:10.932] Server  LOG      ✓ Compiled in 240ms
+[00:15:26.003] Server  LOG      ✓ Compiled in 110ms
+[00:15:33.106] Server  LOG      ✓ Compiled in 867ms
+[00:15:57.320] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Documents...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="min-h-screen flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:15:57.320] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:15:57.425] Browser LOG     Server cache cleared!
+[00:16:10.623] Browser LOG     Server cache cleared!
+[00:22:47.178] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Documents...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="min-h-screen flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:22:47.178] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:22:47.178] Browser LOG     Server cache cleared!
+[00:33:09.789] Server  LOG      ✓ Compiled in 347ms
+[00:33:18.221] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Documents...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="min-h-screen flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:33:18.221] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:18.418] Browser LOG     Server cache cleared!
+[00:33:31.071] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:33:31.249] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:47.022] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:47.154] Browser LOG     Server cache cleared!
+[00:33:47.374] Server  LOG      ✓ Compiled in 38ms
+[00:33:49.494] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:33:49.658] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:51.405] Server  WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:33:52.910] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:33:52.910] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:33:52.910] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:00.361] Server  LOG      ✓ Compiled in 41ms
+[00:34:04.375] Server  WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:34:05.824] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:34:05.824] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:05.825] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:17.295] Server  LOG      ✓ Compiled in 40ms
+[00:34:50.175] Server  LOG      ✓ Compiled in 36ms
+[00:34:58.398] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:34:58.398] Browser LOG     Server cache cleared!
+[00:38:59.215] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:01.206] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:39:07.896] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Documents...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="min-h-screen flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:39:08.012] Browser LOG     Server cache cleared!
+[00:39:08.012] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:39:09.704] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:10.731] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:39:15.223] Browser LOG     Server cache cleared!
+[00:39:15.223] Browser LOG     Server cache cleared!
+[00:39:19.645] Browser LOG     Server cache cleared!
+[00:39:19.645] Browser LOG     Server cache cleared!
+[00:39:22.723] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[00:39:23.800] Browser WARN    Image with src "https://cdn.dummyjson.com/product-images/groceries/beef-steak/1.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:39:24.592] Browser LOG     Server cache cleared!
+[00:39:24.592] Browser LOG     Server cache cleared!
+[00:39:27.392] Browser LOG     Server cache cleared!
+[00:39:27.392] Browser LOG     Server cache cleared!

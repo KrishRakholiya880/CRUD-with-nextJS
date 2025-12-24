@@ -103,6 +103,7 @@ export async function deleteProductAction(id) {
   }
 }
 
+// resetLocalCache
 export async function resetLocalCache() {
   localCache.length = 0;
   return true;

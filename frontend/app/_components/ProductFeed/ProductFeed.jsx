@@ -17,19 +17,22 @@ export default function ProductFeed({ initialProducts, token, userdata }) {
 
   const pathname = usePathname();
 
-  // Effect for set the URL to "/" when page loaded
   useEffect(() => {
+    // For set the URL to "/" when page loaded
     if (typeof window !== "undefined") {
       window.history.replaceState(null, "", pathname);
     }
 
+    // Clearing the cache to disappear new product
     const clearCache = async () => {
       await resetLocalCache();
       console.log("Server cache cleared!");
     };
-
     clearCache();
-  }, []);
+
+    // To show a newly added product when submit add button
+    setProducts(initialProducts);
+  }, [initialProducts]);
 
   // Function to load more
   const loadMore = useCallback(async () => {

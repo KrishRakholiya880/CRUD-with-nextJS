@@ -83,7 +83,7 @@ export default async function ProductID({ params }) {
           <div className="pt-4">
             <Link
               href="/"
-              className="inline-blockpx-6 py-3text-base lg:text-lgtext-white bg-blue-500hover:bg-blue-600transition-all duration-300rounded-xl">
+              className="inline-block px-6 py-3 text-base lg:text-lg text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-xl">
               Back
             </Link>
           </div>
