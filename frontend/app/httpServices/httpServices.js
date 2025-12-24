@@ -1,6 +1,6 @@
 const BASE_URL_PRODUCTS = "https://dummyjson.com/product";
-const BASE_URL_USERS = "https://crud-with-next-js-backend.vercel.app/api/auth";
-const BASE_URL_ADMIN = "https://crud-with-next-js-backend.vercel.app/api";
+const BASE_URL_USERS = "http://localhost:5000/api/auth";
+const BASE_URL_ADMIN = "http://localhost:5000/api";
 
 // Product APIs
 
