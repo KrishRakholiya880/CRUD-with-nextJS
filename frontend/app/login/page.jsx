@@ -8,18 +8,27 @@ import { Field, Form, Formik } from "formik";
 import Link from "next/link";
 // Login API
 import { loginAPI } from "../httpServices/httpServices";
-// Set token & userdata
-import { SetToken } from "../CookieAction/SetToken";
-import { SetUserData } from "../CookieAction/SetUserData";
 // Axios
 import axios from "axios";
 // Router
 import { useRouter } from "next/navigation";
-import { toast } from "react-toastify";
+import { createSession, getCurrentUser } from "../auth-actions/auth-actions";
+import { useEffect } from "react";
 
 export default function Login() {
   // Router
   const router = useRouter();
+
+  // UseEffect for checking the user is available or not
+  useEffect(() => {
+    const checkUser = async () => {
+      const currentUser = await getCurrentUser();
+      if (currentUser) {
+        router.push("/");
+      }
+    };
+    checkUser();
+  }, []);
 
   // Handle Submit
   const handleSubmit = async ({ email, password }, { resetForm }) => {
@@ -28,17 +37,14 @@ export default function Login() {
         email,
         password,
       });
-      await SetToken(res.data.token);
-      await SetUserData(res.data.user);
+      await createSession(res.data.token, res.data.user);
       if (res.data.user.role === "admin") {
         router.push("/admin");
       } else {
         router.push("/");
       }
-      toast.success(res.data.message);
       resetForm();
     } catch (error) {
-      toast.error(error?.response?.data?.message);
       console.log(error);
     }
   };

@@ -1,11 +1,9 @@
 // Components
 import AddProductModal from "./_components/AddProductModal/AddProductModal";
+import ProductFeed from "./_components/ProductFeed/ProductFeed";
 // Actions
 import { getProductsAction } from "./action/ProductActions";
-// Get token & userdata
-import { GetToken } from "./CookieAction/GetToken";
-import { GetUserData } from "./CookieAction/GetUserData";
-import ProductFeed from "./_components/ProductFeed/ProductFeed";
+import { getCurrentUser, getToken } from "./auth-actions/auth-actions";
 
 // Metadata
 export const metadata = {
@@ -39,6 +37,10 @@ const jsonLd = {
 };
 
 export default async function Home({ searchParams }) {
+  // token & currentUser
+  const token = await getToken();
+  const currentUser = await getCurrentUser();
+
   // Get all products
   const initialProducts = await getProductsAction(1);
 
@@ -50,10 +52,6 @@ export default async function Home({ searchParams }) {
   const productToEdit = editId
     ? initialProducts.find((product) => product.id === Number(editId))
     : null;
-
-  // Get the token from cookie
-  const token = await GetToken();
-  const userdata = await GetUserData();
 
   return (
     <main>
@@ -71,7 +69,7 @@ export default async function Home({ searchParams }) {
         </div>
 
         {/* Add Product */}
-        {token && userdata.role === "admin" && (
+        {token && currentUser?.role === "admin" && (
           <AddProductModal productToEdit={productToEdit} />
         )}
 
@@ -79,7 +77,7 @@ export default async function Home({ searchParams }) {
         <ProductFeed
           initialProducts={initialProducts}
           token={token}
-          userdata={userdata}
+          currentUser={currentUser}
         />
       </div>
     </main>

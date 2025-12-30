@@ -1,8 +1,5 @@
 // SAME imports as before (no change)
 import React from "react";
-// Cookie Actions
-import { GetToken } from "@/app/CookieAction/GetToken";
-import { GetUserData } from "@/app/CookieAction/GetUserData";
 // Link
 import Link from "next/link";
 // Image
@@ -11,10 +8,11 @@ import Image from "next/image";
 import SearchProduct from "../SearchProduct/SearchProduct";
 import LogoutButton from "../LogoutButton/LogoutButton";
 import MobileHeader from "./MobileMenu";
+import { getCurrentUser, getToken } from "@/app/auth-actions/auth-actions";
 
 export default async function Header() {
-  const token = await GetToken();
-  const userdata = await GetUserData();
+  const token = await getToken();
+  const currentUser = await getCurrentUser("currentUser");
 
   return (
     <>
@@ -48,14 +46,14 @@ export default async function Header() {
                 href="/about">
                 About
               </Link>
-              {userdata && (
+              {currentUser && (
                 <Link
                   className="p-4 hover:text-blue-500 transition-colors duration-300"
                   href="/user">
                   User
                 </Link>
               )}
-              {userdata?.role === "admin" && (
+              {currentUser && currentUser.role === "admin" && (
                 <Link
                   className="p-4 hover:text-blue-500 transition-colors duration-300"
                   href="/admin">
@@ -86,7 +84,7 @@ export default async function Header() {
         </div>
       </header>
 
-      <MobileHeader token={token} userdata={userdata} />
+      {/* <MobileHeader token={token} userdata={userdata} /> */}
     </>
   );
 }

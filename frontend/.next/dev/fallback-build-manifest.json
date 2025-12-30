@@ -1,6 +1,31 @@
 {
   "pages": {
-    "/_app": []
+    "/_app": [
+      "static/chunks/d2a21_next_dist_compiled_a11f6bd4._.js",
+      "static/chunks/d2a21_next_dist_shared_lib_3f8120be._.js",
+      "static/chunks/d2a21_next_dist_client_a47973dd._.js",
+      "static/chunks/d2a21_next_dist_85ea0b88._.js",
+      "static/chunks/d2a21_next_app_fb9e30bd.js",
+      "static/chunks/[next]_entry_page-loader_ts_ed4b0f06._.js",
+      "static/chunks/d2a21_react-dom_0c72d96e._.js",
+      "static/chunks/d2a21_0594d7ca._.js",
+      "static/chunks/[root-of-the-server]__cda88548._.js",
+      "static/chunks/Documents_projects_CRUD-with-nextJS_frontend_pages__app_2da965e7._.js",
+      "static/chunks/turbopack-Documents_projects_CRUD-with-nextJS_frontend_pages__app_33d38f9d._.js"
+    ],
+    "/_error": [
+      "static/chunks/d2a21_next_dist_compiled_a11f6bd4._.js",
+      "static/chunks/d2a21_next_dist_shared_lib_a123f954._.js",
+      "static/chunks/d2a21_next_dist_client_a47973dd._.js",
+      "static/chunks/d2a21_next_dist_49af88a8._.js",
+      "static/chunks/d2a21_next_error_8931cf56.js",
+      "static/chunks/[next]_entry_page-loader_ts_192424bd._.js",
+      "static/chunks/d2a21_react-dom_0c72d96e._.js",
+      "static/chunks/d2a21_0594d7ca._.js",
+      "static/chunks/[root-of-the-server]__fc78ce6e._.js",
+      "static/chunks/Documents_projects_CRUD-with-nextJS_frontend_pages__error_2da965e7._.js",
+      "static/chunks/turbopack-Documents_projects_CRUD-with-nextJS_frontend_pages__error_a646425b._.js"
+    ]
   },
   "devFiles": [],
   "polyfillFiles": [],

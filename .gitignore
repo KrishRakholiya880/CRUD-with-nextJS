@@ -9,7 +9,7 @@ node_modules/
 public/ (only if you want to ignore specific assets)
 
 # Local environment files
-.env*.local
+.env*
 
 # Debug logs
 npm-debug.log*

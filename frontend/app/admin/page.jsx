@@ -3,13 +3,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import { toast } from "react-toastify";
 
 // Helpers
-import { GetToken } from "../CookieAction/GetToken";
-import { GetUserData } from "../CookieAction/GetUserData";
 import LogoutButton from "../_components/LogoutButton/LogoutButton";
 import { adminProtected } from "../httpServices/httpServices";
+import { getCurrentUser, getToken } from "../auth-actions/auth-actions";
 
 export default function AdminPage() {
   const router = useRouter();
@@ -18,11 +16,10 @@ export default function AdminPage() {
 
   useEffect(() => {
     const fetch = async () => {
-      const token = await GetToken();
-      const userdata = await GetUserData();
+      const token = await getToken();
+      const userdata = await getCurrentUser();
 
       if (!token || !userdata) {
-        toast.error("Access Denied: Admins only");
         router.push("/login");
         return;
       }
@@ -33,9 +30,7 @@ export default function AdminPage() {
         const res = await axios.get(adminProtected(), {
           headers: { Authorization: `Bearer ${token}` },
         });
-        toast.success(res.data.message);
       } catch (error) {
-        toast.error(error.response?.data?.message);
         router.push("/login");
       } finally {
         setLoading(false);

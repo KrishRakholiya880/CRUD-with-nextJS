@@ -11,15 +11,24 @@ import { useRouter } from "next/navigation";
 import { signupAPI } from "../httpServices/httpServices";
 // Axios
 import axios from "axios";
-// Set token & userdata
-import { SetToken } from "../CookieAction/SetToken";
-import { SetUserData } from "../CookieAction/SetUserData";
-import { toast } from "react-toastify";
+import { createSession } from "../auth-actions/auth-actions";
 
 export default function Signup() {
-  // Router
+  // router
   const router = useRouter();
-  // HandleSubmit
+
+  // UseEffect for checking the user is available or not
+  useEffect(() => {
+    const checkUser = async () => {
+      const currentUser = await getCurrentUser();
+      if (currentUser) {
+        router.push("/");
+      }
+    };
+    checkUser();
+  }, []);
+
+  // HandleSubmit function
   const handleSubmit = async (
     { username, email, password, role },
     { resetForm }
@@ -31,17 +40,17 @@ export default function Signup() {
         password,
         role,
       });
-      await SetToken(res.data.token);
-      await SetUserData(res.data.user);
+
+      await createSession(res.data.token, res.data.user);
+      resetForm();
+
+      // Redirect based on role
       if (res.data.user.role === "admin") {
         router.push("/admin");
       } else {
         router.push("/");
       }
-      toast.success(res.data.message);
-      resetForm();
     } catch (error) {
-      toast.error(error?.response?.data?.message);
       console.log(error);
     }
   };
@@ -61,7 +70,7 @@ export default function Signup() {
         onSubmit={handleSubmit}>
         {({ errors, touched }) => (
           <div className="w-full flex justify-center">
-            <Form className=" w-full max-w-md p-5 sm:p-6 rounded-3xl shadow-md dark:shadow-slate-300 shadow-slate-900 flex flex-col space-y-4 dark:bg-white text-black">
+            <Form className="w-full max-w-md p-5 sm:p-6 rounded-3xl shadow-md dark:shadow-slate-300 shadow-slate-900 flex flex-col space-y-4 dark:bg-white text-black">
               <h1 className="text-center text-2xl sm:text-3xl font-semibold">
                 Signup
               </h1>
@@ -78,9 +87,9 @@ export default function Signup() {
                   name="username"
                   placeholder="Enter your name"
                 />
-                {errors.name && touched.name && (
+                {errors.username && touched.username && (
                   <p className="text-red-500 text-xs sm:text-sm">
-                    {errors.name}
+                    {errors.username}
                   </p>
                 )}
               </div>
@@ -125,12 +134,12 @@ export default function Signup() {
 
               <button
                 type="submit"
-                className=" mt-2 w-full py-2.5 text-base text-white border-2 border-blue-500 bg-blue-500 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 rounded-xl">
+                className="mt-2 w-full py-2.5 text-base text-white border-2 border-blue-500 bg-blue-500 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 rounded-xl">
                 Sign up
               </button>
 
               <p className="text-center text-sm sm:text-base">
-                Already a user?
+                Already a user?{" "}
                 <Link className="text-blue-500 font-bold" href="/login">
                   Login
                 </Link>

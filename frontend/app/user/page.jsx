@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import { toast } from "react-toastify";
 
 // Your Helpers
 import { GetToken } from "../CookieAction/GetToken";
@@ -23,7 +22,6 @@ export default function UserPage() {
       const userdata = await GetUserData();
 
       if (!token || !userdata) {
-        toast.error("Please login first");
         router.replace("/login");
         return;
       }
@@ -34,9 +32,7 @@ export default function UserPage() {
         const res = await axios.get(userProtected(), {
           headers: { Authorization: `Bearer ${token}` },
         });
-        toast.success(res.data.message);
       } catch (error) {
-        toast.error(error?.response?.data?.message);
         router.replace("/login");
       } finally {
         setLoading(false);

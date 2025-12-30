@@ -8,7 +8,7 @@ import {
 } from "@/app/action/ProductActions";
 import { usePathname } from "next/navigation";
 
-export default function ProductFeed({ initialProducts, token, userdata }) {
+export default function ProductFeed({ initialProducts, token, currentUser }) {
   // States
   const [products, setProducts] = useState(initialProducts);
   const [page, setPage] = useState(1);
@@ -90,7 +90,7 @@ export default function ProductFeed({ initialProducts, token, userdata }) {
               rating={product.rating}
               price={product.price}
               token={token}
-              userdata={userdata}
+              currentUser={currentUser}
               priority={index < 4}
             />
           ))}

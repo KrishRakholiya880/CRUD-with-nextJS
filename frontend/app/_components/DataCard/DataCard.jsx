@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 // Hooks
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function DataCard({
   id,
@@ -16,9 +16,8 @@ export default function DataCard({
   category,
   rating,
   price,
-  onRemove,
   token,
-  userdata,
+  currentUser,
 }) {
   // Router
   const router = useRouter();
@@ -28,7 +27,6 @@ export default function DataCard({
   // Remove a product
   const removeProducts = async (id) => {
     setIsVisible(false);
-    await onRemove(id);
   };
 
   if (!isVisible) return null;
@@ -72,7 +70,7 @@ export default function DataCard({
         <b>Price:</b> ${price}
       </p>
 
-      {token && userdata.role === "admin" && (
+      {token && currentUser?.role === "admin" && (
         <div className="flex flex-col sm:flex-row gap-3 pt-3">
           <button
             className="flex-1 py-2 text-sm lg:text-base bg-green-500 border-2 border-green-500 rounded-xl transition-all hover:bg-transparent cursor-pointer"
