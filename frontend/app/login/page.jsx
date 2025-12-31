@@ -12,23 +12,14 @@ import { loginAPI } from "../httpServices/httpServices";
 import axios from "axios";
 // Router
 import { useRouter } from "next/navigation";
-import { createSession, getCurrentUser } from "../auth-actions/auth-actions";
-import { useEffect } from "react";
+// Auth-actions
+import { createSession } from "../auth-actions/auth-actions";
+// Toast
+// import { toast } from "react-toastify";
 
 export default function Login() {
   // Router
   const router = useRouter();
-
-  // UseEffect for checking the user is available or not
-  useEffect(() => {
-    const checkUser = async () => {
-      const currentUser = await getCurrentUser();
-      if (currentUser) {
-        router.push("/");
-      }
-    };
-    checkUser();
-  }, []);
 
   // Handle Submit
   const handleSubmit = async ({ email, password }, { resetForm }) => {
@@ -44,7 +35,9 @@ export default function Login() {
         router.push("/");
       }
       resetForm();
+      // toast.success(res.data.message || "Login Successfully");
     } catch (error) {
+      // toast.error(error?.data?.response?.message || "Error while login");
       console.log(error);
     }
   };

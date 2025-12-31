@@ -1,25 +1,29 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+// Axios
 import axios from "axios";
+// Router
 import { useRouter } from "next/navigation";
-
-// Your Helpers
-import { GetToken } from "../CookieAction/GetToken";
-import { GetUserData } from "../CookieAction/GetUserData";
+// Component
 import LogoutButton from "../_components/LogoutButton/LogoutButton";
+// API
 import { userProtected } from "../httpServices/httpServices";
+// Auth-actions
+import { getCurrentUser, getToken } from "../auth-actions/auth-actions";
 
 export default function UserPage() {
+  // router
   const router = useRouter();
+  // states
   const [userInfo, setUserInfo] = useState(null);
-
   const [loading, setLoading] = useState(true);
 
+  // effcet
   useEffect(() => {
     const fetch = async () => {
-      const token = await GetToken();
-      const userdata = await GetUserData();
+      const token = await getToken();
+      const userdata = await getCurrentUser();
 
       if (!token || !userdata) {
         router.replace("/login");

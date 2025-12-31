@@ -39,6 +39,9 @@ export default function Footer() {
             <Link href="/about" className="hover:text-blue-500 transition">
               About
             </Link>
+            <Link href="/contact" className="hover:text-blue-500 transition">
+              Contact
+            </Link>
           </div>
 
           {/* SUBSCRIBE */}

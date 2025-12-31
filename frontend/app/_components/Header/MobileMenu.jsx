@@ -11,7 +11,7 @@ import Image from "next/image";
 import SearchProduct from "../SearchProduct/SearchProduct";
 import LogoutButton from "../LogoutButton/LogoutButton";
 
-export default function MobileHeader({ token, userdata }) {
+export default function MobileHeader({ token, currentUser }) {
   // State
   const [open, setOpen] = useState(false);
 
@@ -59,13 +59,13 @@ export default function MobileHeader({ token, userdata }) {
             About
           </Link>
 
-          {userdata && (
+          {currentUser && (
             <Link href="/user" onClick={() => setOpen(false)}>
               User
             </Link>
           )}
 
-          {userdata?.role === "admin" && (
+          {currentUser?.role === "admin" && (
             <Link href="/admin" onClick={() => setOpen(false)}>
               Dashboard
             </Link>

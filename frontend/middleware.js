@@ -9,6 +9,11 @@ export function middleware(request) {
     return NextResponse.redirect(new URL("/", request.url));
   }
 
+  // rewrite is used to rewrite the content of new url to old url
+  // if (request.nextUrl.pathname.startsWith("/about")) {
+  //   return NextResponse.rewrite(new URL("/contact", request.url));
+  // }
+
   return NextResponse.next();
 }
 

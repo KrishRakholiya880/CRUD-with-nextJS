@@ -25,7 +25,7 @@
         }
       },
       "layer": {
-        "app/login/page": "action-browser"
+        "app/login/page": "rsc"
       },
       "exportedName": "getCurrentUser",
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"

@@ -1,10 +1,9 @@
 "use server";
 
+// Cookie
 import { cookies } from "next/headers";
 
-// ==========================================
-// 1. SPECIFIC ACTION: TOKEN ONLY
-// ==========================================
+// 1. SETTOKEN ACTION: TOKEN ONLY
 export async function setToken(token) {
   if (!token) return;
 
@@ -21,9 +20,7 @@ export async function deleteToken() {
   await cookies().delete("token");
 }
 
-// ==========================================
-// 2. SPECIFIC ACTION: USER DATA ONLY
-// ==========================================
+// 2. SETUSERDATA ACTION: USER DATA ONLY
 export async function setCurrentUser(userData) {
   if (!userData) return;
 
@@ -42,18 +39,15 @@ export async function deleteCurrentUser() {
   await cookies().delete("currentUser");
 }
 
-// ==========================================
 // 3. SAFE COMBINED ACTION (Use this for Login/Signup)
-// ==========================================
 export async function createSession(token, userData) {
-  const cookieStore = await cookies(); // Get the store for THIS specific request
+  const cookieStore = await cookies();
 
   // Set Token
   if (token) {
     cookieStore.set("token", token, {
       httpOnly: true,
       secure: true,
-      path: "/", // Added path to ensure consistency
       maxAge: 60 * 60 * 24 * 7,
     });
   }
@@ -66,24 +60,19 @@ export async function createSession(token, userData) {
     cookieStore.set("currentUser", value, {
       httpOnly: true,
       secure: true,
-      path: "/", // Added path to ensure consistency
       maxAge: 60 * 60 * 24 * 7,
     });
   }
 }
 
-// ==========================================
-// 5. GET TOKEN (Server Side Only)
-// ==========================================
+// 5. GET TOKEN
 export async function getToken() {
   const cookieStore = await cookies();
   const token = cookieStore.get("token");
   return token?.value;
 }
 
-// ==========================================
-// 6. GET CURRENT USER (Server Side Only)
-// ==========================================
+// 6. GET CURRENT USER
 export async function getCurrentUser() {
   const cookieStore = await cookies();
   const userCookie = cookieStore.get("currentUser");
@@ -98,9 +87,7 @@ export async function getCurrentUser() {
   }
 }
 
-// ==========================================
-// 7. LOGOUT (Clears Everything)
-// ==========================================
+// 7. LOGOUT
 export async function logout() {
   const cookieStore = await cookies();
   cookieStore.delete("token");

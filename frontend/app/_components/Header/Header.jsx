@@ -8,15 +8,18 @@ import Image from "next/image";
 import SearchProduct from "../SearchProduct/SearchProduct";
 import LogoutButton from "../LogoutButton/LogoutButton";
 import MobileHeader from "./MobileMenu";
+// Auth-actions
 import { getCurrentUser, getToken } from "@/app/auth-actions/auth-actions";
 
 export default async function Header() {
+  // Auth-actions
   const token = await getToken();
   const currentUser = await getCurrentUser("currentUser");
 
   return (
     <>
-      <header className="hidden lg:block sticky top-0 w-full z-50 dark:bg-white dark:text-black bg-black text-white shadow-md">
+      {/* Desktop Screen Header */}
+      <header className="hidden lg:block sticky top-0 w-full z-50 dark:bg-white dark:text-black backdrop-blur-lg shadow-md">
         <div className="max-w-[1400px] mx-auto px-4 py-2 lg:py-0">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl flex items-center">
@@ -45,6 +48,11 @@ export default async function Header() {
                 className="p-4 hover:text-blue-500 transition-colors duration-300"
                 href="/about">
                 About
+              </Link>
+              <Link
+                className="p-4 hover:text-blue-500 transition-colors duration-300"
+                href="/contact">
+                Contact
               </Link>
               {currentUser && (
                 <Link
@@ -84,7 +92,8 @@ export default async function Header() {
         </div>
       </header>
 
-      {/* <MobileHeader token={token} userdata={userdata} /> */}
+      {/* Mobile Screen Header */}
+      <MobileHeader token={token} currentUser={currentUser} />
     </>
   );
 }

@@ -35,13 +35,13 @@ export default function DataCard({
     <Link
       href={`/products/${id}`}
       className="border rounded-2xl p-4 lg:p-5 space-y-4 text-sm lg:text-base transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-white dark:bg-black">
-      <div className="overflow-hidden text-center">
+      <div className="relative w-[250px] h-[250px] mx-auto overflow-hidden text-center">
         <Image
           src={image}
           alt="productImages"
-          width={250}
-          height={250}
+          fill
           className="object-cover mx-auto w-[180px] h-[180px] md:w-[220px] md:h-[220px] transition-transform duration-300 hover:scale-105"
+          sizes="(max-width: 768px) 180px, 220px"
           placeholder="blur"
           blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAAUElEQVR4nO3OMRHAIAAAMcBkj8O/jxro8hMdEgWZzz7jf9btwDetQqvQKrQKrUKr0Cq0Cq1Cq9AqtAqtQqvQKrQKrUKr0Cq0Cq1Cq9AqtIoXooYBb1MYuvkAAAAASUVORK5CYII="
         />

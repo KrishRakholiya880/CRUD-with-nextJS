@@ -1,8 +1,10 @@
 // Components
 import AddProductModal from "./_components/AddProductModal/AddProductModal";
-import ProductFeed from "./_components/ProductFeed/ProductFeed";
+import DataCard from "./_components/DataCard/DataCard";
+import LoadMore from "./_components/LoadMore/LoadMore";
 // Actions
 import { getProductsAction } from "./action/ProductActions";
+// Auth-actions
 import { getCurrentUser, getToken } from "./auth-actions/auth-actions";
 
 // Metadata
@@ -25,7 +27,7 @@ export const metadata = {
 // Schema
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization", // or "WebSite"
+  "@type": "Website", // or "Organization"
   name: "MyShop",
   url: "https://myshop.com",
   logo: "https://myshop.com/logo.png",
@@ -73,12 +75,28 @@ export default async function Home({ searchParams }) {
           <AddProductModal productToEdit={productToEdit} />
         )}
 
-        {/* Product Display */}
-        <ProductFeed
-          initialProducts={initialProducts}
-          token={token}
-          currentUser={currentUser}
-        />
+        {/* THE HYBRID GRID */}
+        <div className="flex flex-col items-center w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {initialProducts &&
+              initialProducts.map((product, index) => (
+                <DataCard
+                  key={product.id}
+                  id={product.id}
+                  image={product.images[0]}
+                  title={product.title}
+                  description={product.description}
+                  category={product.category}
+                  rating={product.rating}
+                  price={product.price}
+                  token={token}
+                  currentUser={currentUser}
+                  priority={index < 4}
+                />
+              ))}
+            <LoadMore token={token} currentUser={currentUser} />
+          </div>
+        </div>
       </div>
     </main>
   );

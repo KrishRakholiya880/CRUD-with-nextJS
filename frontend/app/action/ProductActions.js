@@ -1,8 +1,8 @@
 "use server";
 
-// revalidatePath
+// RevalidatePath
 import { revalidatePath } from "next/cache";
-// Add new product API & get all products API
+// APIs
 import {
   fetchAllProducts,
   addNewProducts,

@@ -24,7 +24,7 @@ export default async function page({ searchParams }) {
   const searchedProducts = resData.products;
 
   if (searchedProducts.length === 0)
-    return <p className="mt-96 text-center text-3xl">Product Not Found</p>;
+    return <p className="mt-20 text-center text-3xl">Product Not Found</p>;
 
   return (
     <main className="flex flex-col items-center w-full mt-10">

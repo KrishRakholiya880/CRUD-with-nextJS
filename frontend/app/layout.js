@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from "./_components/Header/Header";
 import Footer from "./_components/Footer/Footer";
+import { getRobots } from "./_components/robots/robots";
 
 export const metadata = {
   title: {
@@ -36,17 +37,7 @@ export const metadata = {
     siteName: "MyShop",
     type: "website",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  robots: getRobots({}),
 };
 
 export default function RootLayout({ children }) {

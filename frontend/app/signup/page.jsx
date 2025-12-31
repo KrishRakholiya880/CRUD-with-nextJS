@@ -11,22 +11,14 @@ import { useRouter } from "next/navigation";
 import { signupAPI } from "../httpServices/httpServices";
 // Axios
 import axios from "axios";
+// Auth-actions
 import { createSession } from "../auth-actions/auth-actions";
+// Toast
+// import { toast } from "react-toastify";
 
 export default function Signup() {
   // router
   const router = useRouter();
-
-  // UseEffect for checking the user is available or not
-  useEffect(() => {
-    const checkUser = async () => {
-      const currentUser = await getCurrentUser();
-      if (currentUser) {
-        router.push("/");
-      }
-    };
-    checkUser();
-  }, []);
 
   // HandleSubmit function
   const handleSubmit = async (
@@ -42,15 +34,18 @@ export default function Signup() {
       });
 
       await createSession(res.data.token, res.data.user);
-      resetForm();
 
       // Redirect based on role
       if (res.data.user.role === "admin") {
         router.push("/admin");
+        // toast.success("Admin Signup Successfully");
       } else {
         router.push("/");
       }
+      resetForm();
+      // toast.success(res.data.message || "Signup Successfully");
     } catch (error) {
+      // toast.error(error?.data?.response?.message || "Error while login");
       console.log(error);
     }
   };
