@@ -3,12 +3,15 @@
 out/
 
 # Dependency directories
-node_modules/
+frontend/node_modules/
+backend/node_modules/
 
 # Static files
 public/ (only if you want to ignore specific assets)
 
 # Local environment files
+frontend/env
+backend/env
 .env*
 
 # Debug logs
