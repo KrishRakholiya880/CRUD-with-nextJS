@@ -1,39 +1,46 @@
 "use client";
 
-// Actions
-import { AddProductAction } from "@/app/action/ProductActions";
-import { updateProductAction } from "@/app/action/ProductActions";
+// Product actions
+import {
+  addProductAction,
+  updateProductAction,
+} from "@/app/httpServices/clientActions";
+
 // Router
 import { useRouter } from "next/navigation";
 // Hooks
 import React, { useEffect, useState } from "react";
+// toastify
+import { toast } from "react-toastify";
 // X-mark Icon
 import { HiMiniXMark } from "react-icons/hi2";
 
 export default function AddProductModal({ productToEdit }) {
+  // router
   const router = useRouter();
+  // States
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
-    id: null,
     images: "",
-    title: "",
+    name: "",
     description: "",
     category: "",
-    rating: "",
+    sub_category: "",
     price: "",
   });
 
+  // useEffect
   useEffect(() => {
     if (productToEdit) {
       setIsOpen(true);
       setFormData({
-        id: productToEdit.id,
-        title: productToEdit.title,
-        description: productToEdit.description,
-        category: productToEdit.category,
-        rating: productToEdit.rating,
-        price: productToEdit.price,
-        images: "",
+        id: productToEdit._id,
+        images: productToEdit.productImage,
+        name: productToEdit.productName,
+        description: productToEdit.productDescription,
+        category: productToEdit.productCategory,
+        sub_category: productToEdit.productSubcategory,
+        price: productToEdit.productPrice,
       });
     }
   }, [productToEdit]);
@@ -52,7 +59,7 @@ export default function AddProductModal({ productToEdit }) {
     reader.onloadend = () => {
       setFormData((prev) => ({
         ...prev,
-        images: [reader.result], // BASE64 STRING
+        images: reader.result, // Removed the [ ] brackets. Now it's a String.
       }));
     };
 
@@ -61,38 +68,42 @@ export default function AddProductModal({ productToEdit }) {
 
   const handleClose = () => {
     setIsOpen(false);
-    setFormData({
-      images: "",
-      title: "",
-      description: "",
-      category: "",
-      rating: "",
-      price: "",
-    });
-    router.push("/");
   };
 
-  // handleSubmit function
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (formData.id) {
-      await updateProductAction(formData);
-    } else {
-      await AddProductAction(formData);
-    }
+    let result;
 
-    handleClose();
+    try {
+      if (formData.id) {
+        result = await updateProductAction(formData);
+      } else {
+        result = await addProductAction(formData);
+      }
+
+      if (result?.status) {
+        toast.success(result.message || "Product Added successfully!");
+        handleClose();
+      } else {
+        toast.error(result?.error || "An unexpected error occurred");
+      }
+      router.refresh();
+    } catch (error) {
+      // Fallback for network failures
+      toast.error("Network error. Please try again.");
+      console.error("Form Submission Error:", error);
+    }
   };
 
   return (
     <div>
       {/* Add Product Button */}
-      <div className="my-4 ml-52">
+      <div className="my-4 text-center">
         <button
           className="px-4 py-2 text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300 rounded-xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}>
-          Add Product
+          {formData.id ? "Edit Product" : "Add Product"}
         </button>
       </div>
 
@@ -106,7 +117,7 @@ export default function AddProductModal({ productToEdit }) {
               </h1>
               <button
                 className="cursor-pointer text-black text-2xl"
-                onClick={() => setIsOpen(!isOpen)}>
+                onClick={handleClose}>
                 <HiMiniXMark />
               </button>
             </div>
@@ -124,14 +135,14 @@ export default function AddProductModal({ productToEdit }) {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="productTitle">Product Title:</label>
+                  <label htmlFor="productName">Product Name:</label>
                   <input
                     type="text"
-                    id="productTitle"
-                    name="title"
-                    value={formData.title}
+                    id="productName"
+                    name="name"
+                    value={formData.name}
                     className="border border-slate-300 w-full p-2 rounded-xl outline-0"
-                    placeholder="Enter a title"
+                    placeholder="Enter a name"
                     onChange={handleChange}
                   />
                 </div>
@@ -162,14 +173,16 @@ export default function AddProductModal({ productToEdit }) {
                   />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="productRating">Product Rating:</label>
+                  <label htmlFor="productSubcategory">
+                    Product Subcategory:
+                  </label>
                   <input
-                    type="number"
-                    id="productRating"
-                    name="rating"
-                    value={formData.rating}
+                    type="text"
+                    id="productSubcategory"
+                    name="sub_category"
+                    value={formData.sub_category}
                     className="border border-slate-300 w-full p-2 rounded-xl outline-0"
-                    placeholder="Enter a rating"
+                    placeholder="Enter a subcategory"
                     onChange={handleChange}
                   />
                 </div>

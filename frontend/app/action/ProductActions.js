@@ -2,62 +2,76 @@
 
 // RevalidatePath
 import { revalidatePath } from "next/cache";
+// apiClient
+import apiClient from "../httpServices/api";
 // APIs
 import {
   fetchAllProducts,
   addNewProducts,
   updateProducts,
   removeProduct,
+  searchProducts,
+  fetchSingleProductData,
 } from "../httpServices/httpServices";
 
-const localCache = [];
-
-// Get all products for pagination
-export async function getProductsAction(page = 1, limit = 15) {
-  const skip = (page - 1) * limit;
-
+// Get all products
+export async function getProductsAction(page, limit) {
   try {
-    const res = await fetch(fetchAllProducts(skip, limit), {
-      cache: "no-store",
-    });
-    const data = await res.json();
-    const allproducts = data.products;
-    if (localCache) {
-      return [...localCache, ...allproducts];
-    } else {
-      return allproducts;
-    }
+    const response = await apiClient.get(fetchAllProducts(page, limit));
+    return response.data;
   } catch (error) {
-    console.error("Fetch Error:", error);
+    console.log("Fetch Error:", error.response?.data || error.message);
+    return [];
+  }
+}
+
+// Get Single Product Data
+export async function getSingleProductAction(id) {
+  try {
+    if (!id) throw new Error("Product ID is required");
+
+    const result = await apiClient.get(fetchSingleProductData(id));
+    return result.data;
+  } catch (error) {
+    console.log(
+      "Get Single Product Error:",
+      error.response?.data.error || error.message,
+    );
+    return error;
+  }
+}
+
+// Search products
+export async function searchProductsAction(query) {
+  try {
+    const response = await apiClient.get(searchProducts(query));
+    return response.data;
+  } catch (error) {
+    console.log("Search Error:", error.response?.data || error.message);
     return [];
   }
 }
 
 // Add Product Action
 export async function AddProductAction(newProductData) {
-  const newProduct = {
-    id: Date.now(),
-    images: newProductData.images,
-    title: newProductData.title,
-    description: newProductData.description,
-    category: newProductData.category,
-    rating: newProductData.rating,
-    price: newProductData.price,
-  };
-
   try {
-    const res = await fetch(addNewProducts(), {
-      method: "POST",
-      header: { "Content-Type": "application/json" },
-      body: JSON.stringify(newProduct),
-    });
-    const resData = await res.json();
-  } catch (error) {
-    console.log(error);
-  }
+    const finalProduct = {
+      productImage: newProductData.images,
+      productName: newProductData.name,
+      productDescription: newProductData.description,
+      productCategory: newProductData.category,
+      productSubcategory: newProductData.sub_category,
+      productPrice: newProductData.price,
+    };
 
-  localCache.unshift(newProduct);
-  revalidatePath("/");
+    // apiClient automatically adds Authorization headers and handles JSON
+    const response = await apiClient.post(addNewProducts(), finalProduct);
+    revalidatePath("/");
+    return response.data;
+  } catch (error) {
+    console.error("Add Product Error:", error.response?.data || error.message);
+    return error;
+  }
 }
 
 // Update Product Action
@@ -65,46 +79,38 @@ export async function updateProductAction(formData) {
   const id = formData.id;
 
   const updatedData = {
-    title: formData.title,
-    description: formData.description,
-    category: formData.category,
-    rating: formData.rating,
-    price: formData.price,
+    productImage: formData.images,
+    productName: formData.name,
+    productDescription: formData.description,
+    productCategory: formData.category,
+    productSubcategory: formData.sub_category,
+    productPrice: formData.price,
   };
 
   try {
-    const res = await fetch(updateProducts(id), {
-      method: "PATCH",
-      header: { "Content-Type": "application/json" },
-      body: JSON.stringify(updatedData),
-    });
+    const response = await apiClient.patch(updateProducts(id), updatedData);
+    revalidatePath("/");
+    return response.data;
   } catch (error) {
-    console.log(error);
+    console.error(
+      "Update Product Error:",
+      error.response?.data || error.message,
+    );
+    return error;
   }
 }
 
 // Delete Product Action
 export async function deleteProductAction(id) {
   try {
-    const res = await fetch(removeProduct(id), {
-      method: "DELETE",
-    });
-    const resData = await res.json();
-    const index = localCache.findIndex((product) => product.id === id);
-
-    if (index !== -1) {
-      localCache.splice(index, 1);
-    }
+    const response = await apiClient.delete(removeProduct(id));
     revalidatePath("/");
-    return true;
+    return response.data;
   } catch (error) {
-    console.error(error);
-    return false;
+    // If the interceptor threw "SESSION_EXPIRED", pass it back
+    if (error.message === "SESSION_EXPIRED" || error.response?.status === 401) {
+      return { success: false, redirect: "/login" };
+    }
+    return { success: false, error: "Delete failed" };
   }
-}
-
-// resetLocalCache
-export async function resetLocalCache() {
-  localCache.length = 0;
-  return true;
 }

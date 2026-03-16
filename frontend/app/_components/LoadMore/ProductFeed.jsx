@@ -2,10 +2,7 @@
 
 import React, { useCallback, useEffect, useState } from "react";
 import DataCard from "../DataCard/DataCard";
-import {
-  getProductsAction,
-  resetLocalCache,
-} from "@/app/action/ProductActions";
+import { getProductsAction } from "@/app/action/ProductActions";
 import { usePathname } from "next/navigation";
 
 export default function ProductFeed({ initialProducts, token, currentUser }) {
@@ -22,13 +19,6 @@ export default function ProductFeed({ initialProducts, token, currentUser }) {
     if (typeof window !== "undefined") {
       window.history.replaceState(null, "", pathname);
     }
-
-    // Clearing the cache to disappear new product
-    const clearCache = async () => {
-      await resetLocalCache();
-      console.log("Server cache cleared!");
-    };
-    clearCache();
 
     // To show a newly added product when submit add button
     setProducts(initialProducts);
@@ -83,8 +73,8 @@ export default function ProductFeed({ initialProducts, token, currentUser }) {
             <DataCard
               key={`${product.id} - ${index}`}
               id={product.id}
-              image={product.images[0]}
-              title={product.title}
+              image={product.images}
+              name={product.name}
               description={product.description}
               category={product.category}
               rating={product.rating}

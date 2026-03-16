@@ -1,15 +1,28 @@
 "use client";
 
-import { logout } from "@/app/auth-actions/auth-actions";
-import { useRouter } from "next/navigation";
 import React from "react";
-// Remove token
+// auth-action
+import { logout } from "@/app/auth-actions/auth-actions";
+// Navigation
+import { useRouter } from "next/navigation";
+// toastify
+import { toast } from "react-toastify";
 
-export default function LogoutButton() {
+export default function LogoutButton({ setOpen }) {
+  // router
   const router = useRouter();
+  // handleLogout
   const handleLogout = async () => {
-    await logout();
-    router.push("/login");
+    try {
+      await logout();
+      toast.success("Logout successful!!!");
+      if (setOpen) {
+        setOpen(false);
+      }
+      router.push("/login");
+    } catch (error) {
+      toast.success(error.message);
+    }
   };
   return (
     <button

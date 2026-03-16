@@ -1,71 +1,66 @@
 "use client";
 
+// Hooks
 import React, { useEffect, useState, useCallback, useRef } from "react";
-import { usePathname } from "next/navigation";
+// Component
 import DataCard from "../DataCard/DataCard"; // Import your card
+// Actions
 import {
   getProductsAction,
-  resetLocalCache,
-} from "@/app/action/ProductActions";
+  searchProductsAction,
+} from "@/app/httpServices/clientActions";
 
-export default function LoadMore({ token, currentUser }) {
+export default function LoadMore({ accessToken, userData, query }) {
   // states
   const [products, setProducts] = useState([]);
-  const [page, setPage] = useState(2); // Start from page 2
+  const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
-
-  // pathname
-  const pathname = usePathname();
+  const skip = 15;
 
   // ref
   const observerTarget = useRef(null);
 
   // Load More Function
-  const loadMoreProducts = useCallback(async () => {
+  const loadAllProducts = useCallback(async () => {
     if (loading || !hasMore) return;
     setLoading(true);
 
     try {
-      const newProducts = await getProductsAction(page);
+      let response;
 
-      if (newProducts.length === 0) {
+      if (query) {
+        console.log(`Searching more for: ${query}, Page: ${page}`);
+        response = await searchProductsAction(query, page, skip);
+      } else {
+        console.log(`Loading more all products, Page: ${page}`);
+        response = await getProductsAction(page, skip);
+      }
+
+      const newItems = response?.products || [];
+
+      if (newItems.length === 0) {
         setHasMore(false);
       } else {
-        setProducts((prev) => [...prev, ...newProducts]);
+        setProducts((prev) => [...prev, ...newItems]);
         setPage((prev) => prev + 1);
-        window.history.replaceState(null, "", `${pathname}?page=${page}`);
       }
     } catch (error) {
-      console.error("Error loading products:", error);
+      console.error("Load More Error:", error);
     } finally {
       setLoading(false);
     }
-  }, [page, loading, hasMore, pathname]);
-
-  useEffect(() => {
-    // For set the URL to "/" when page loaded
-    if (typeof window !== "undefined") {
-      window.history.replaceState(null, "", pathname);
-    }
-
-    // Clearing the cache to disappear new product
-    const clearCache = async () => {
-      await resetLocalCache();
-      console.log("Server cache cleared!");
-    };
-    clearCache();
-  }, []);
+  }, [page, loading, hasMore, query]);
 
   // Scroll by IntersectionObserver
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting && hasMore && !loading) {
-          loadMoreProducts();
+          loadAllProducts();
         }
       },
-      { threshold: 0.1 } // Trigger when 100% of the target is visible
+      { threshold: 0.1 }, // Trigger when 100% of the target is visible
     );
 
     if (observerTarget.current) {
@@ -77,7 +72,7 @@ export default function LoadMore({ token, currentUser }) {
         observer.unobserve(observerTarget.current);
       }
     };
-  }, [loadMoreProducts, hasMore, loading]);
+  }, [loadAllProducts, hasMore, loading]);
 
   // Scroll Listener by DOM
   // useEffect(() => {
@@ -99,22 +94,25 @@ export default function LoadMore({ token, currentUser }) {
 
   return (
     <>
-      {/* Render the NEW products here */}
-      {products.map((product, index) => (
-        <DataCard
-          key={`${product.id}-${index}-loaded`}
-          id={product.id}
-          image={product.images[0]}
-          title={product.title}
-          description={product.description}
-          category={product.category}
-          rating={product.rating}
-          price={product.price}
-          token={token}
-          currentUser={currentUser}
-          priority={false} // Lazy load images for these
-        />
-      ))}
+      <div className="flex flex-col items-center w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {products.map((product, index) => (
+            <DataCard
+              key={`${product._id}-${index}`}
+              id={product._id}
+              image={product.productImage}
+              name={product.productName}
+              description={product.productDescription}
+              category={product.productCategory}
+              subCategory={product.productSubcategory}
+              price={product.productPrice}
+              accessToken={accessToken}
+              userData={userData}
+              priority={false}
+            />
+          ))}
+        </div>
+      </div>
 
       {hasMore && (
         <div
@@ -127,16 +125,17 @@ export default function LoadMore({ token, currentUser }) {
       {loading && (
         <div className="col-span-full flex justify-center p-4">
           <p className="text-blue-500 font-bold animate-pulse">
-            Loading more items...
+            Loading more products...
           </p>
         </div>
       )}
 
-      {!hasMore && (
-        <div className="col-span-full text-center p-4 text-gray-500">
-          You've reached the end!
-        </div>
-      )}
+      {!accessToken ||
+        (!hasMore && (
+          <div className="col-span-full text-center p-4 text-gray-500">
+            You've reached the end!
+          </div>
+        ))}
     </>
   );
 }

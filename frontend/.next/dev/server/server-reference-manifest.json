@@ -2,457 +2,123 @@
   "node": {
     "0068a9fc760348ae4570b2a7e2ad8fc2d078e41358": {
       "workers": {
-        "app/_not-found/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/about/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/about/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/contact/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
         "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "deleteToken",
           "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
         }
       },
       "layer": {
-        "app/_not-found/page": "rsc",
-        "app/about/page": "rsc",
-        "app/contact/page": "rsc",
-        "app/page": "rsc",
-        "app/products/page": "rsc"
+        "app/page": "rsc"
       },
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js",
       "exportedName": "deleteToken"
     },
     "00783c36763b428bcb8c849e014a513a0e43e8af75": {
       "workers": {
-        "app/_not-found/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/about/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/about/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/contact/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
         "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "getCurrentUser",
           "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
         }
       },
       "layer": {
-        "app/_not-found/page": "rsc",
-        "app/about/page": "rsc",
-        "app/contact/page": "rsc",
-        "app/page": "rsc",
-        "app/products/page": "rsc"
+        "app/page": "rsc"
       },
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js",
       "exportedName": "getCurrentUser"
     },
     "0080021c89373530e2d11fff1e3641256b034abcfe": {
       "workers": {
-        "app/_not-found/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/about/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/about/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/contact/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
         "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "deleteCurrentUser",
           "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
         }
       },
       "layer": {
-        "app/_not-found/page": "rsc",
-        "app/about/page": "rsc",
-        "app/contact/page": "rsc",
-        "app/page": "rsc",
-        "app/products/page": "rsc"
+        "app/page": "rsc"
       },
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js",
       "exportedName": "deleteCurrentUser"
     },
     "0092c27ea76a3b8baa44db5bc2195adf1b9446e881": {
       "workers": {
-        "app/_not-found/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "logout",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/about/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/about/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "logout",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/contact/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "logout",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
         "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "logout",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "logout",
           "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
         }
       },
       "layer": {
-        "app/_not-found/page": "action-browser",
-        "app/about/page": "action-browser",
-        "app/contact/page": "action-browser",
-        "app/page": "action-browser",
-        "app/products/page": "action-browser"
+        "app/page": "action-browser"
       },
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js",
       "exportedName": "logout"
     },
     "00ace11e0d923ab2b8074581245b0380428e3b69db": {
       "workers": {
-        "app/_not-found/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/about/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/about/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/contact/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
         "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "getToken",
           "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
         }
       },
       "layer": {
-        "app/_not-found/page": "rsc",
-        "app/about/page": "rsc",
-        "app/contact/page": "rsc",
-        "app/page": "rsc",
-        "app/products/page": "rsc"
+        "app/page": "action-browser"
       },
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js",
       "exportedName": "getToken"
     },
     "407b1bf4d2379ab30576c7464f0403aba388fcbd29": {
       "workers": {
-        "app/_not-found/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "setCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/about/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/about/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "setCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/contact/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "setCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
         "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "setCurrentUser",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "setCurrentUser",
           "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
         }
       },
       "layer": {
-        "app/_not-found/page": "rsc",
-        "app/about/page": "rsc",
-        "app/contact/page": "rsc",
-        "app/page": "rsc",
-        "app/products/page": "rsc"
+        "app/page": "rsc"
       },
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js",
       "exportedName": "setCurrentUser"
     },
     "40d195c4311c829b6e4d667e2763928e5240ce2e72": {
       "workers": {
-        "app/_not-found/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "setToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/about/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/about/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "setToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/contact/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "setToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
         "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "setToken",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "setToken",
           "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
         }
       },
       "layer": {
-        "app/_not-found/page": "rsc",
-        "app/about/page": "rsc",
-        "app/contact/page": "rsc",
-        "app/page": "rsc",
-        "app/products/page": "rsc"
+        "app/page": "rsc"
       },
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js",
       "exportedName": "setToken"
     },
-    "6022d4c91d5b96ecf17bb72ae86bd2092b4a75d5cc": {
+    "7022d4c91d5b96ecf17bb72ae86bd2092b4a75d5cc": {
       "workers": {
-        "app/_not-found/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/_not-found/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "createSession",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/about/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/about/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "createSession",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/contact/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/contact/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "createSession",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
         "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "createSession",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
           "exportedName": "createSession",
           "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
         }
       },
       "layer": {
-        "app/_not-found/page": "rsc",
-        "app/about/page": "rsc",
-        "app/contact/page": "rsc",
-        "app/page": "rsc",
-        "app/products/page": "rsc"
+        "app/page": "action-browser"
       },
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js",
       "exportedName": "createSession"
-    },
-    "00a5f6d113b65ba2c18d0a35545ca385c242abeaeb": {
-      "workers": {
-        "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "resetLocalCache",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "resetLocalCache",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        }
-      },
-      "layer": {
-        "app/page": "action-browser",
-        "app/products/page": "action-browser"
-      },
-      "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js",
-      "exportedName": "resetLocalCache"
-    },
-    "4054ecbd19fe4d9e1318542cbbc5758728ef110ebd": {
-      "workers": {
-        "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "AddProductAction",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "AddProductAction",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        }
-      },
-      "layer": {
-        "app/page": "action-browser",
-        "app/products/page": "rsc"
-      },
-      "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js",
-      "exportedName": "AddProductAction"
-    },
-    "4088e295a9651d9067446a504d10be84c32bb89e90": {
-      "workers": {
-        "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "updateProductAction",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "updateProductAction",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        }
-      },
-      "layer": {
-        "app/page": "action-browser",
-        "app/products/page": "rsc"
-      },
-      "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js",
-      "exportedName": "updateProductAction"
-    },
-    "40d6dbeab00ebf0c834851ce623dbf710d2ce7fd08": {
-      "workers": {
-        "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteProductAction",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteProductAction",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        }
-      },
-      "layer": {
-        "app/page": "rsc",
-        "app/products/page": "rsc"
-      },
-      "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js",
-      "exportedName": "deleteProductAction"
-    },
-    "608e0a97db1bb39f97aaba338bf0b21af48e6173b7": {
-      "workers": {
-        "app/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getProductsAction",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        },
-        "app/products/page": {
-          "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getProductsAction",
-          "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js"
-        }
-      },
-      "layer": {
-        "app/page": "action-browser",
-        "app/products/page": "action-browser"
-      },
-      "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/action/ProductActions.js",
-      "exportedName": "getProductsAction"
     }
   },
   "edge": {},

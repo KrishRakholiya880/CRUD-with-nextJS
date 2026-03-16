@@ -11,7 +11,7 @@ import Image from "next/image";
 import SearchProduct from "../SearchProduct/SearchProduct";
 import LogoutButton from "../LogoutButton/LogoutButton";
 
-export default function MobileHeader({ token, currentUser }) {
+export default function MobileHeader({ accessToken, userData }) {
   // State
   const [open, setOpen] = useState(false);
 
@@ -39,7 +39,7 @@ export default function MobileHeader({ token, currentUser }) {
 
       {/* MOBILE MENU */}
       {open && (
-        <div className="px-4 pb-4 flex flex-col gap-3">
+        <div className="px-4 pb-4 flex flex-col justify-center min-h-[calc(100vh-64px)] gap-3">
           <Link
             href="/"
             onClick={() => setOpen(false)}
@@ -59,22 +59,28 @@ export default function MobileHeader({ token, currentUser }) {
             About
           </Link>
 
-          {currentUser && (
-            <Link href="/user" onClick={() => setOpen(false)}>
+          {userData && (
+            <Link
+              href="/user"
+              className="text-center p-2"
+              onClick={() => setOpen(false)}>
               User
             </Link>
           )}
 
-          {currentUser?.role === "admin" && (
-            <Link href="/admin" onClick={() => setOpen(false)}>
+          {userData?.role === "admin" && (
+            <Link
+              href="/admin"
+              className="text-center p-2"
+              onClick={() => setOpen(false)}>
               Dashboard
             </Link>
           )}
 
-          <SearchProduct />
+          <SearchProduct setOpen={setOpen} />
 
-          {token ? (
-            <LogoutButton />
+          {accessToken ? (
+            <LogoutButton setOpen={setOpen} />
           ) : (
             <>
               <Link

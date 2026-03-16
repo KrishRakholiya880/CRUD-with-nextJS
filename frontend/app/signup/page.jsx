@@ -6,47 +6,41 @@ import { SignupSchema } from "@/Schema/SignupSchema/SignupSchema";
 import { Field, Form, Formik } from "formik";
 // Link & Navigation
 import Link from "next/link";
+// Navigation
 import { useRouter } from "next/navigation";
-// API
-import { signupAPI } from "../httpServices/httpServices";
-// Axios
-import axios from "axios";
-// Auth-actions
-import { createSession } from "../auth-actions/auth-actions";
+// Login Action
+import { signupAction } from "../httpServices/clientActions";
 // Toast
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
+// auth-action // Old
+import { createSession } from "../auth-actions/auth-actions";
 
 export default function Signup() {
   // router
   const router = useRouter();
 
   // HandleSubmit function
-  const handleSubmit = async (
-    { username, email, password, role },
-    { resetForm }
-  ) => {
+  const handleSubmit = async (values, { resetForm }) => {
     try {
-      const res = await axios.post(signupAPI(), {
-        username,
-        email,
-        password,
-        role,
-      });
+      const res = await signupAction(values);
 
-      await createSession(res.data.token, res.data.user);
+      // create session // Old
+      await createSession(
+        res?.result?.accessToken,
+        res?.result?.refreshToken,
+        res?.result?.user,
+      );
+      toast.success(res.result.success);
 
-      // Redirect based on role
-      if (res.data.user.role === "admin") {
+      // Same
+      if (res?.result?.user?.role === "ADMIN") {
         router.push("/admin");
-        // toast.success("Admin Signup Successfully");
       } else {
         router.push("/");
       }
       resetForm();
-      // toast.success(res.data.message || "Signup Successfully");
     } catch (error) {
-      // toast.error(error?.data?.response?.message || "Error while login");
-      console.log(error);
+      toast.error(error?.message);
     }
   };
 
@@ -54,89 +48,107 @@ export default function Signup() {
     username: "",
     email: "",
     password: "",
-    role: "user",
   };
 
   return (
-    <div className="flex justify-center items-start min-h-screen w-full px-4 py-10 sm:py-0 sm:items-center">
+    <div className="flex justify-center items-center min-h-screen w-full px-4 bg-black">
       <Formik
         initialValues={initialValues}
         validationSchema={SignupSchema}
         onSubmit={handleSubmit}>
-        {({ errors, touched }) => (
+        {({ errors, touched, isSubmitting }) => (
           <div className="w-full flex justify-center">
-            <Form className="w-full max-w-md p-5 sm:p-6 rounded-3xl shadow-md dark:shadow-slate-300 shadow-slate-900 flex flex-col space-y-4 dark:bg-white text-black">
-              <h1 className="text-center text-2xl sm:text-3xl font-semibold">
-                Signup
-              </h1>
-
-              {/* USERNAME */}
-              <div className="flex flex-col space-y-1.5">
-                <label htmlFor="username" className="text-sm sm:text-base">
-                  Username
-                </label>
-                <Field
-                  type="text"
-                  className="border border-slate-300 w-full px-3 py-2.5 rounded-xl outline-0 text-base"
-                  id="username"
-                  name="username"
-                  placeholder="Enter your name"
-                />
-                {errors.username && touched.username && (
-                  <p className="text-red-500 text-xs sm:text-sm">
-                    {errors.username}
-                  </p>
-                )}
+            <Form className="w-full max-w-md p-8 rounded-[2rem] border border-zinc-800 bg-zinc-950 shadow-2xl flex flex-col space-y-6">
+              {/* Header */}
+              <div className="space-y-2 text-center">
+                <h1 className="text-3xl font-black text-white tracking-tight uppercase">
+                  Create <span className="text-yellow-400">Account</span>
+                </h1>
+                <p className="text-zinc-500 text-sm">
+                  Join our premium community today
+                </p>
               </div>
 
-              {/* EMAIL */}
-              <div className="flex flex-col space-y-1.5">
-                <label htmlFor="email" className="text-sm sm:text-base">
-                  Email
-                </label>
-                <Field
-                  type="email"
-                  className="border border-slate-300 w-full px-3 py-2.5 rounded-xl outline-0 text-base"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email"
-                />
-                {errors.email && touched.email && (
-                  <p className="text-red-500 text-xs sm:text-sm">
-                    {errors.email}
-                  </p>
-                )}
+              <div className="space-y-4">
+                {/* USERNAME */}
+                <div className="flex flex-col space-y-2">
+                  <label
+                    htmlFor="username"
+                    className="text-xs font-bold text-zinc-400 uppercase tracking-widest ml-1">
+                    Username
+                  </label>
+                  <Field
+                    type="text"
+                    className="bg-zinc-900 border border-zinc-800 w-full px-4 py-3 rounded-2xl outline-none text-white placeholder:text-zinc-600 focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/50 transition-all"
+                    id="username"
+                    name="username"
+                    placeholder="How should we call you?"
+                  />
+                  {errors.username && touched.username && (
+                    <p className="text-red-400 text-xs mt-1 ml-1">
+                      {errors.username}
+                    </p>
+                  )}
+                </div>
+
+                {/* EMAIL */}
+                <div className="flex flex-col space-y-2">
+                  <label
+                    htmlFor="email"
+                    className="text-xs font-bold text-zinc-400 uppercase tracking-widest ml-1">
+                    Email Address
+                  </label>
+                  <Field
+                    type="email"
+                    className="bg-zinc-900 border border-zinc-800 w-full px-4 py-3 rounded-2xl outline-none text-white placeholder:text-zinc-600 focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/50 transition-all"
+                    id="email"
+                    name="email"
+                    placeholder="name@example.com"
+                  />
+                  {errors.email && touched.email && (
+                    <p className="text-red-400 text-xs mt-1 ml-1">
+                      {errors.email}
+                    </p>
+                  )}
+                </div>
+
+                {/* PASSWORD */}
+                <div className="flex flex-col space-y-2">
+                  <label
+                    htmlFor="password"
+                    className="text-xs font-bold text-zinc-400 uppercase tracking-widest ml-1">
+                    Password
+                  </label>
+                  <Field
+                    type="password"
+                    className="bg-zinc-900 border border-zinc-800 w-full px-4 py-3 rounded-2xl outline-none text-white placeholder:text-zinc-600 focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/50 transition-all"
+                    id="password"
+                    name="password"
+                    placeholder="••••••••"
+                  />
+                  {errors.password && touched.password && (
+                    <p className="text-red-400 text-xs mt-1 ml-1">
+                      {errors.password}
+                    </p>
+                  )}
+                </div>
               </div>
 
-              {/* PASSWORD */}
-              <div className="flex flex-col space-y-1.5">
-                <label htmlFor="password" className="text-sm sm:text-base">
-                  Password
-                </label>
-                <Field
-                  type="password"
-                  className="border border-slate-300 w-full px-3 py-2.5 rounded-xl outline-0 text-base"
-                  id="password"
-                  name="password"
-                  placeholder="Enter your password"
-                />
-                {errors.password && touched.password && (
-                  <p className="text-red-500 text-xs sm:text-sm">
-                    {errors.password}
-                  </p>
-                )}
-              </div>
-
+              {/* SUBMIT BUTTON */}
               <button
                 type="submit"
-                className="mt-2 w-full py-2.5 text-base text-white border-2 border-blue-500 bg-blue-500 hover:bg-blue-600 hover:border-blue-600 transition-all duration-300 rounded-xl">
-                Sign up
+                disabled={isSubmitting}
+                className="mt-4 w-full py-4 text-sm font-black text-black bg-yellow-400 hover:bg-yellow-300 transition-all duration-300 rounded-2xl shadow-[0_0_25px_rgba(255,215,0,0.2)] active:scale-[0.98] uppercase tracking-tighter">
+                {isSubmitting ? "Creating Account..." : "Create Account"}
               </button>
 
-              <p className="text-center text-sm sm:text-base">
-                Already a user?{" "}
-                <Link className="text-blue-500 font-bold" href="/login">
-                  Login
+              {/* FOOTER */}
+              <p className="text-center text-sm text-zinc-500">
+                Already have an account?{" "}
+                <Link
+                  className="text-yellow-400 font-bold hover:underline"
+                  href="/login">
+                  Sign in
                 </Link>
               </p>
             </Form>

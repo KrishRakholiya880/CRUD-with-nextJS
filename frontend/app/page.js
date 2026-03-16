@@ -1,9 +1,8 @@
 // Components
 import AddProductModal from "./_components/AddProductModal/AddProductModal";
-import DataCard from "./_components/DataCard/DataCard";
 import LoadMore from "./_components/LoadMore/LoadMore";
 // Actions
-import { getProductsAction } from "./action/ProductActions";
+import { getProductsAction } from "./httpServices/clientActions";
 // Auth-actions
 import { getCurrentUser, getToken } from "./auth-actions/auth-actions";
 
@@ -40,11 +39,11 @@ const jsonLd = {
 
 export default async function Home({ searchParams }) {
   // token & currentUser
-  const token = await getToken();
-  const currentUser = await getCurrentUser();
+  const accessToken = await getToken();
+  const userData = await getCurrentUser();
 
   // Get all products
-  const initialProducts = await getProductsAction(1);
+  const initialProducts = await getProductsAction();
 
   // searchParams
   const searchParam = await searchParams;
@@ -52,7 +51,7 @@ export default async function Home({ searchParams }) {
 
   // Get the data of editId from products
   const productToEdit = editId
-    ? initialProducts.find((product) => product.id === Number(editId))
+    ? initialProducts?.products.find((product) => product._id === editId)
     : null;
 
   return (
@@ -61,7 +60,7 @@ export default async function Home({ searchParams }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="max-w-9xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="my-8">
           <h1 className="text-center text-4xl mb-3">Welcome to MyShop</h1>
           <p className="max-w-xl mx-auto text-center">
@@ -70,33 +69,24 @@ export default async function Home({ searchParams }) {
           </p>
         </div>
 
+        {/* Login Modal */}
+        {/* {!accessToken && !userData && <LoginModal />} */}
+
         {/* Add Product */}
-        {token && currentUser?.role === "admin" && (
+        {accessToken && userData?.role === "ADMIN" && (
           <AddProductModal productToEdit={productToEdit} />
         )}
 
-        {/* THE HYBRID GRID */}
-        <div className="flex flex-col items-center w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {initialProducts &&
-              initialProducts.map((product, index) => (
-                <DataCard
-                  key={product.id}
-                  id={product.id}
-                  image={product.images[0]}
-                  title={product.title}
-                  description={product.description}
-                  category={product.category}
-                  rating={product.rating}
-                  price={product.price}
-                  token={token}
-                  currentUser={currentUser}
-                  priority={index < 4}
-                />
-              ))}
-            <LoadMore token={token} currentUser={currentUser} />
-          </div>
-        </div>
+        {!initialProducts?.products &&
+          initialProducts?.products?.length === 0 && (
+            <div className="flex flex-col items-center mt-20">
+              <p className="text-3xl text-center text-gray-500">
+                Product Not Found
+              </p>
+            </div>
+          )}
+
+        <LoadMore accessToken={accessToken} userData={userData} />
       </div>
     </main>
   );

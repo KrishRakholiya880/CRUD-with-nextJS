@@ -70,7 +70,7 @@
         }
       },
       "layer": {
-        "app/signup/page": "rsc"
+        "app/signup/page": "action-browser"
       },
       "exportedName": "getToken",
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
@@ -105,7 +105,7 @@
       "exportedName": "setToken",
       "filename": "Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js"
     },
-    "6022d4c91d5b96ecf17bb72ae86bd2092b4a75d5cc": {
+    "7022d4c91d5b96ecf17bb72ae86bd2092b4a75d5cc": {
       "workers": {
         "app/signup/page": {
           "moduleId": "[project]/Documents/projects/CRUD-with-nextJS/frontend/.next-internal/server/app/signup/page/actions.js { ACTIONS_MODULE0 => \"[project]/Documents/projects/CRUD-with-nextJS/frontend/app/auth-actions/auth-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
