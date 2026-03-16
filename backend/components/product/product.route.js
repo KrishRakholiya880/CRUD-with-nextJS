@@ -7,23 +7,20 @@ const { verifyToken, isAdmin } = require("../../middleware/authMiddleware");
 const validate = require("../../middleware/validation");
 // Schema
 const productValidateSchema = require("./product.validation");
-
+// Router
 const router = express.Router();
 
 router
   .route("/")
-  .get(productController.getAllProducts)
+  .get(
+    validate(productValidateSchema.getAllProducts),
+    productController.getAllProducts,
+  )
   .post(
     verifyToken,
     isAdmin,
-    validate(productValidateSchema.addNewProduct),
-    productController.addNewProduct,
-  );
-router
-  .route("/search")
-  .get(
-    validate(productValidateSchema.searchProduct),
-    productController.searchProduct,
+    validate(productValidateSchema.addOrUpdateProduct),
+    productController.addOrUpdateProduct,
   );
 router
   .route("/item/:id")
@@ -31,11 +28,11 @@ router
     validate(productValidateSchema.getSingleProduct),
     productController.getSingleProductById,
   )
-  .patch(
+  .put(
     verifyToken,
     isAdmin,
-    validate(productValidateSchema.updateProductById),
-    productController.updateProductById,
+    validate(productValidateSchema.addOrUpdateProduct),
+    productController.addOrUpdateProduct,
   )
   .delete(
     verifyToken,

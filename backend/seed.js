@@ -25,3 +25,36 @@ const seedDB = async () => {
 };
 
 seedDB();
+
+// const generateAndSeed = async (count) => {
+//   try {
+//     await connectionToDB(MONGO_URI);
+//     console.log("Connected to MongoDB");
+
+//     const products = [];
+//     for (let i = 1; i <= count; i++) {
+//       products.push({
+//         productImage:
+//           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNubLmqdOK9pZWU-2IiD20cuSIdUUDi9-NvQ&s",
+//         productName: `Test ${i}`,
+//         productDescription: `Test ${i} `.repeat(14).trim(),
+//         productCategory: `Test ${i} `.repeat(4).trim(),
+//         productSubcategory: `Test ${i} `.repeat(3).trim(),
+//         productPrice: i,
+//       });
+//     }
+
+//     await ProductMdl.deleteMany({});
+//     const result = await ProductMdl.insertMany(products);
+
+//     console.log(`Successfully inserted ${result.length} test products!`);
+//   } catch (error) {
+//     console.error("Error seeding database:", error);
+//   } finally {
+//     // 3. Disconnect only when everything above is done
+//     await mongoose.disconnect();
+//     console.log("MongoDB disconnected safely.");
+//   }
+// };
+
+// generateAndSeed(60);

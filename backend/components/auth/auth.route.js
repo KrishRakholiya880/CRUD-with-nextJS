@@ -5,19 +5,18 @@ const authController = require("./auth.controller");
 // validation
 const validate = require("../../middleware/validation");
 // Schema
-const validateSchema = require("./auth.validation");
+const authValidateSchema = require("./auth.validation");
 // Router
 const router = express.Router();
 
 // routes
 router
   .route("/signup")
-  .post(validate(validateSchema.signup), authController.signUp);
+  .post(validate(authValidateSchema.signup), authController.signUp);
 router
   .route("/signin")
-  .post(validate(validateSchema.signin), authController.signIn);
-router
-  .route("/renew-access-token")
-  .post(validate(validateSchema.renewAccessToken), authController.renewToken);
+  .post(validate(authValidateSchema.signin), authController.signIn);
+router.route("/logout").post(authController.logout);
+router.route("/renew-access-token").post(authController.renewAccessToken);
 
 module.exports = router;

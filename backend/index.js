@@ -2,8 +2,8 @@
 require("dotenv").config();
 // Express
 const express = require("express");
-// connection
-const { connectionToDB } = require("./helper/connection");
+// mongoose
+const mongoose = require("mongoose");
 // App
 const app = express();
 // PORT
@@ -12,10 +12,13 @@ const PORT = process.env.PORT || 8000;
 const indexRoutes = require("./components/indexRoutes");
 // cors
 const cors = require("cors");
+// middlewares
 const errorHandler = require("./middleware/errorHandler");
+const cookieParser = require("cookie-parser");
 
 // connection
-connectionToDB(process.env.MONGO_URI || "mongodb://localhost:27017/next_db")
+mongoose
+  .connect(process.env.MONGO_URI || "mongodb://localhost:27017/next_db")
   .then(() => {
     console.log("Connected to MongoDB");
   })
@@ -26,6 +29,7 @@ connectionToDB(process.env.MONGO_URI || "mongodb://localhost:27017/next_db")
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(
   cors({
     origin: true,

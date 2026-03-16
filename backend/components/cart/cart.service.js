@@ -1,13 +1,9 @@
-// Cart Modal
-const CartMdl = require("../../models/Cart");
+// cart DB utils
+const cart_db = require("../../dbUtils/cart_db");
 
 // Get Cart Data
 const getCartData = async (userId) => {
-  const cart = await CartMdl.findOne({ userId }).populate({
-    path: "items.product",
-    select:
-      "productName productDescription productPrice productImage productCategory",
-  });
+  const cart = await cart_db.getCartData(userId);
 
   if (!cart) {
     throw new Error("CART_NOT_FOUND");
@@ -22,13 +18,10 @@ const addToCart = async ({ userId, items }) => {
 
   const newProductId = item.product._id || item.product;
 
-  let cart = await CartMdl.findOne({ userId });
+  let cart = await cart_db.getCartData(userId);
 
   if (!cart) {
-    return await CartMdl.create({
-      userId,
-      items: [item],
-    });
+    return await cart_db.createNewCart(userId, [item]);
   }
 
   const itemIndex = cart.items.findIndex((p) => {
@@ -49,15 +42,7 @@ const addToCart = async ({ userId, items }) => {
 // Remove From Cart
 const removeFromCart = async (cartId, productId) => {
   try {
-    const result = await CartMdl.findOneAndUpdate(
-      { _id: cartId },
-      {
-        $pull: {
-          items: { product: productId },
-        },
-      },
-      { new: true },
-    );
+    const result = await cart_db.removeProductFromCart(cartId, productId);
 
     return result;
   } catch (error) {

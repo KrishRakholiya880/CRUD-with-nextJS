@@ -32,17 +32,8 @@ const signin = {
     }),
   }),
 };
-const renewAccessToken = {
-  body: Joi.object({
-    refreshToken: Joi.string().required().messages({
-      "string.empty": "RefreshToken cannot be empty.",
-      "any.required": "RefreshToken is required.",
-    }),
-  }),
-};
 
 module.exports = {
   signup,
   signin,
-  renewAccessToken,
 };

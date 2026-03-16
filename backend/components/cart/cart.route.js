@@ -5,19 +5,22 @@ const cartController = require("./cart.contoller");
 // validation
 const validate = require("../../middleware/validation");
 // cartSchema
-const cartSchema = require("./cart.validation");
+const cartValidationSchema = require("./cart.validation");
 
 // Router
 const router = express.Router();
 
 router
   .route("/")
-  .post(validate(cartSchema.addToCart), cartController.addToCart);
+  .post(validate(cartValidationSchema.addToCart), cartController.addToCart);
 router
   .route("/:cartId/:productId")
-  .delete(validate(cartSchema.removeFromCart), cartController.removeFromCart);
+  .delete(
+    validate(cartValidationSchema.removeFromCart),
+    cartController.removeFromCart,
+  );
 router
   .route("/:userId")
-  .get(validate(cartSchema.getCartData), cartController.getCartData);
+  .get(validate(cartValidationSchema.getCartData), cartController.getCartData);
 
 module.exports = router;

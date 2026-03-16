@@ -1,43 +1,33 @@
+// product service
 const productService = require("./product.service");
 
 const getAllProducts = async (req, res, next) => {
   try {
+    const query = req.query?.q;
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 15;
     // console.log(page, limit);
-    const result = await productService.getAllProducts(page, limit);
+    const result = await productService.getAllProducts(query, page, limit);
     return res.status(200).json(result);
   } catch (error) {
     console.error("Get All Products Error:", error.message);
-    // return next(error);
-  }
-};
-
-const addNewProduct = async (req, res, next) => {
-  try {
-    const body = req.body;
-    const result = await productService.addNewProduct(body);
-    return res.status(201).json({
-      status: true,
-      message: "New Product Added!!!",
-      id: result._id,
-    });
-  } catch (error) {
-    console.error("Add Product Error:", error);
     return next(error);
   }
 };
 
-const searchProduct = async (req, res, next) => {
-  try {
-    const q = req.query.q;
-    const page = parseInt(req.query.page) || 1;
-    const limit = parseInt(req.query.limit) || 15;
+const addOrUpdateProduct = async (req, res, next) => {
+  const id = req.params.id;
+  const body = req.body;
 
-    const result = await productService.searchProduct(q, page, limit);
-    return res.status(200).json(result);
+  try {
+    const result = await productService.addOrUpdateProduct(id, body);
+
+    return res.status(200).json({
+      status: true,
+      id: result._id,
+    });
   } catch (error) {
-    console.error("Search API Error:", error);
+    console.error("Error while Add or Update product", error);
     return next(error);
   }
 };
@@ -48,28 +38,7 @@ const getSingleProductById = async (req, res, next) => {
     const result = await productService.getSingleProductById(id);
     return res.status(200).json(result);
   } catch (error) {
-    console.error("Get Single Product Error:", error.message);
-    return next(error);
-  }
-};
-
-const updateProductById = async (req, res, next) => {
-  try {
-    const id = req.params.id;
-    const body = req.body;
-    const result = await productService.updateProductById(id, body);
-
-    if (!result) {
-      return res.status(404).json({ error: "Product Not Found" });
-    }
-
-    return res.status(200).json({
-      status: true,
-      message: "Product Updated!!!",
-      id: result._id,
-    });
-  } catch (error) {
-    console.error("Update Product Error:", error);
+    console.log("Get Single Product Error:", error.message);
     return next(error);
   }
 };
@@ -93,8 +62,6 @@ const deleteProductById = async (req, res, next) => {
 module.exports = {
   getAllProducts,
   getSingleProductById,
-  addNewProduct,
-  updateProductById,
   deleteProductById,
-  searchProduct,
+  addOrUpdateProduct,
 };

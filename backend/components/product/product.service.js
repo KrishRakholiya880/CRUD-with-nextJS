@@ -1,19 +1,32 @@
-const ProductMdl = require("../../models/Products");
+// product DB utils
+const product_db = require("../../dbUtils/product_db");
 
-const getAllProducts = async (page = 1, limit = 15) => {
+const getAllProducts = async (query, page = 1, limit = 15) => {
   try {
     const skip = (page - 1) * limit;
+    let products;
+    let totalProducts;
 
-    const products = await ProductMdl.find({})
-      .sort({ createdAt: -1 })
-      .skip(skip)
-      .limit(limit);
+    if (query) {
+      const searchQuery = {
+        $or: [
+          { productName: { $regex: query, $options: "i" } },
+          { productCategory: { $regex: query, $options: "i" } },
+          { productSubcategory: { $regex: query, $options: "i" } },
+          { productDescription: { $regex: query, $options: "i" } },
+        ],
+      };
+
+      products = await product_db.searchProduct(searchQuery, skip, limit);
+      totalProducts = await product_db.countProducts(searchQuery);
+    } else {
+      products = await product_db.getAllProducts(skip, limit);
+      totalProducts = await product_db.countProducts();
+    }
 
     if (!products) {
       throw new Error("PRODUCT_NOT_FOUND");
     }
-
-    const totalProducts = await ProductMdl.countDocuments();
 
     return {
       products,
@@ -26,74 +39,31 @@ const getAllProducts = async (page = 1, limit = 15) => {
   }
 };
 
-const addNewProduct = async (body) => {
+const addOrUpdateProduct = async (id, body) => {
+  const foundProduct = await product_db.findProductById(id);
+
   try {
-    const result = await ProductMdl.create(body);
-    if (!result) throw new Error("PRODUCT_NOT_FOUND");
-    return result;
-  } catch (error) {
-    throw new Error(error.message);
-  }
-};
-
-const searchProduct = async (queryText, page = 1, limit = 15) => {
-  try {
-    const skip = (page - 1) * limit;
-
-    const searchQuery = {
-      $or: [
-        { productName: { $regex: queryText, $options: "i" } },
-        { productCategory: { $regex: queryText, $options: "i" } },
-        { productSubcategory: { $regex: queryText, $options: "i" } },
-        { productDescription: { $regex: queryText, $options: "i" } },
-      ],
-    };
-
-    const products = await ProductMdl.find(searchQuery)
-      .sort({ createdAt: -1 })
-      .skip(skip)
-      .limit(limit);
-
-    if (!products) {
-      throw new Error("PRODUCT_NOT_FOUND");
+    if (foundProduct) {
+      const result = await product_db.updateProductById(id, body);
+      return result;
+    } else {
+      const result = await product_db.createProduct(body);
+      return result;
     }
-
-    const totalMatching = await ProductMdl.countDocuments(searchQuery);
-
-    return {
-      products,
-      currentPage: Number(page),
-      totalPages: Math.ceil(totalMatching / limit),
-      totalProducts: totalMatching,
-    };
   } catch (error) {
-    throw new Error(error.message);
+    throw new Error(error.meesage);
   }
 };
 
 const getSingleProductById = async (id) => {
-  try {
-    const result = await ProductMdl.findById(id);
-    if (!result) throw new Error("PRODUCT_NOT_FOUND");
-    return result;
-  } catch (error) {
-    throw new Error(error.message);
-  }
-};
-
-const updateProductById = async (id, body) => {
-  try {
-    const result = await ProductMdl.findByIdAndUpdate(id, body, { new: true });
-    if (!result) throw new Error("PRODUCT_NOT_FOUND");
-    return result;
-  } catch (error) {
-    throw new Error(error.message);
-  }
+  const result = await product_db.findProductById(id);
+  if (!result) throw new Error("PRODUCT_NOT_FOUND");
+  return result;
 };
 
 const deleteProductById = async (id) => {
   try {
-    const result = await ProductMdl.findByIdAndDelete(id);
+    const result = await product_db.deleteProductById(id);
     if (!result) throw new Error("PRODUCT_NOT_FOUND");
     return result;
   } catch (error) {
@@ -104,8 +74,6 @@ const deleteProductById = async (id) => {
 module.exports = {
   getAllProducts,
   getSingleProductById,
-  addNewProduct,
-  updateProductById,
   deleteProductById,
-  searchProduct,
+  addOrUpdateProduct,
 };

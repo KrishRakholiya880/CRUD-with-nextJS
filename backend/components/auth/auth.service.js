@@ -1,9 +1,10 @@
-// User modal
-const UserMdl = require("../../models/User");
+// auth DB utils
+const auth_db = require("../../dbUtils/auth_db");
 // auth-helper
 const generateAccessAndRefreshTokens = require("../../helper/authHelper");
 // JWT
 const jwt = require("jsonwebtoken");
+// hepler
 const { hashPassword, comparePassword } = require("../../helper/bcrypt");
 
 const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET;
@@ -11,50 +12,45 @@ const REFRESH_TOKEN_SECRET = process.env.REFRESH_TOKEN_SECRET;
 const signUp = async (userData) => {
   const { email, password } = userData;
 
-  const foundUser = await UserMdl.findOne({ email: email });
+  const foundUser = await auth_db.findOneUser(email);
 
   if (foundUser) {
     throw new Error("USER_EXIST");
   }
 
-  try {
-    const hashedPass = await hashPassword(password);
-    userData.password = hashedPass;
-    const result = await UserMdl.create(userData);
-    const { accessToken, refreshToken } =
-      generateAccessAndRefreshTokens(result);
-    return {
-      user: {
-        id: result._id,
-        username: result.username,
-        email: result.email,
-        role: result.role,
-      },
-      accessToken,
-      refreshToken,
-    };
-  } catch (error) {
-    console.error("Signup Service Error:", error.message);
-  }
+  const hashedPass = await hashPassword(password);
+  userData.password = hashedPass;
+  const result = await auth_db.createUser(userData);
+  const { accessToken, refreshToken } = generateAccessAndRefreshTokens(result);
+  return {
+    user: {
+      id: result._id,
+      username: result.username,
+      email: result.email,
+      role: result.role,
+    },
+    accessToken,
+    refreshToken,
+  };
 };
 
 const signIn = async (email, password) => {
-  const userData = await UserMdl.findOne({ email: email });
+  const userData = await auth_db.findOneUser(email);
 
-  // 1. Check if user's email exists
   if (!userData) {
     throw new Error("EMAIL_NOT_FOUND");
   }
 
-  // 2. Check if password matches
   const isMatch = await comparePassword(password, userData.password);
   if (!isMatch) {
     throw new Error("INVALID_PASSWORD");
   }
 
-  // 3. Success logic
   const { accessToken, refreshToken } =
     generateAccessAndRefreshTokens(userData);
+
+  userData.refreshToken = refreshToken;
+  await userData.save();
   return {
     user: {
       id: userData._id,
@@ -67,23 +63,25 @@ const signIn = async (email, password) => {
   };
 };
 
+const logout = async (refreshToken) => {
+  const result = await auth_db.findTokenByRefreshTokenAndUpdate(refreshToken);
+  return result;
+};
+
 const renewAccessToken = async (oldRefreshToken) => {
-  try {
-    const decoded = jwt.verify(oldRefreshToken, REFRESH_TOKEN_SECRET);
+  const decoded = jwt.verify(oldRefreshToken, REFRESH_TOKEN_SECRET);
 
-    const { accessToken, refreshToken } = generateAccessAndRefreshTokens({
-      _id: decoded._id || decoded.id,
-      role: decoded.role,
-    });
+  const { accessToken, refreshToken } = generateAccessAndRefreshTokens({
+    _id: decoded._id || decoded.id,
+    role: decoded.role,
+  });
 
-    return { accessToken, refreshToken };
-  } catch (error) {
-    throw new Error("INVALID_REFRESH_TOKEN");
-  }
+  return { accessToken, refreshToken };
 };
 
 module.exports = {
   signUp,
   signIn,
+  logout,
   renewAccessToken,
 };

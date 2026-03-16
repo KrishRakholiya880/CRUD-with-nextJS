@@ -4,7 +4,6 @@ module.exports = errorHandler = (err, req, res, next) => {
   const errorKey = Object.keys(errorCodes);
   const error = err.message;
   const errorMatch = errorKey.includes(error);
-  // console.log(errorMatch);
 
   if (errorMatch) {
     const status = errorCodes[error].httpStatusCode;
