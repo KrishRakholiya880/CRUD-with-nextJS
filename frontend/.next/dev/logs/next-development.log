@@ -1,57 +1,83 @@
-[00:00:16.581] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:18.354] Server  LOG      ✓ Ready in 10.7s
-[00:00:25.614] Server  LOG      ○ Compiling / ...
-[00:00:40.727] Server  ERROR   (node:49216) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+[00:00:06.100] Server  WARN     ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:06.927] Server  LOG      ✓ Ready in 4.7s
+[00:00:09.956] Server  LOG      ○ Compiling / ...
+[00:00:21.737] Server  ERROR   (node:29336) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-[00:00:40.927] Server  LOG     Fetch Error: {}
-[00:00:43.520] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:43.520] Browser LOG     Loading more all products, Page: 1
-[00:00:44.177] Browser WARN    Image with src "http://dummyimage.com/182x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.177] Browser WARN    Image with src "http://dummyimage.com/114x100.png/cc0000/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.177] Browser WARN    Image with src "http://dummyimage.com/176x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/193x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/189x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_rp_progressive&w=740&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/102x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/138x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/218x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/242x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/220x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/201x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/229x100.png/ff4444/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/154x100.png/cc0000/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "http://dummyimage.com/120x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:44.311] Browser WARN    Image with src "https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_rp_progressive&w=740&q=80" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:45.508] Browser LOG     Loading more all products, Page: 2
-[00:00:46.007] Browser WARN    Image with src "http://dummyimage.com/120x100.png/ff4444/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:46.008] Browser WARN    Image with src "http://dummyimage.com/112x100.png/ff4444/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:46.008] Browser WARN    Image with src "http://dummyimage.com/134x100.png/cc0000/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:46.008] Browser WARN    Image with src "http://dummyimage.com/125x100.png/ff4444/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:46.008] Browser WARN    Image with src "http://dummyimage.com/146x100.png/cc0000/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:46.008] Browser WARN    Image with src "http://dummyimage.com/230x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:46.008] Browser WARN    Image with src "http://dummyimage.com/180x100.png/cc0000/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:46.008] Browser WARN    Image with src "http://dummyimage.com/188x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:46.856] Browser LOG     Loading more all products, Page: 3
-[00:00:47.467] Browser WARN    Image with src "http://dummyimage.com/223x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:47.467] Browser WARN    Image with src "http://dummyimage.com/162x100.png/ff4444/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:49.420] Server  LOG     Fetch Error: {}
-[00:00:51.239] Browser LOG     Loading more all products, Page: 1
-[00:00:51.239] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_rp_progressive&w=740&q=80" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/176x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/182x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/114x100.png/cc0000/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "https://img.freepik.com/free-photo/lavender-field-sunset-near-valensole_268835-3910.jpg?semt=ais_rp_progressive&w=740&q=80" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/193x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/189x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/218x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/102x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/138x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/220x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/242x100.png/dddddd/000000" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/201x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/229x100.png/ff4444/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/154x100.png/cc0000/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:52.218] Browser WARN    Image with src "http://dummyimage.com/120x100.png/5fa2dd/ffffff" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:21.852] Server  LOG     Fetch Error: {}
+[00:00:23.972] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:23.972] Browser LOG     Loading more all products, Page: 1
+[00:02:09.419] Server  LOG      ✓ Compiled in 315ms
+[00:02:10.352] Browser ERROR   ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/httpServices/clientActions.js:24:59
+Parsing ecmascript source code failed
+  22 | export async function getProductsAction(page, limit) {
+  23 |   try {
+> 24 |     const response = await apiClient.get(fetchAllProducts(Number(page) = 1, Number(limit) = 30));
+     |                                                           ^^^^^^^^^^^^
+  25 |     return response.data;
+  26 |   } catch (error) {
+  27 |     console.log("Fetch Error:", error.response?.data || error.message);
+
+The left-hand side of an assignment expression must be a variable or a property access.
+
+Import traces:
+  Server Component:
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/httpServices/clientActions.js
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/page.js
+
+  Client Component Browser:
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/httpServices/clientActions.js [Client Component Browser]
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/_components/LoadMore/LoadMore.jsx [Client Component Browser]
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/_components/LoadMore/LoadMore.jsx [Server Component]
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/page.js [Server Component]
+
+  Client Component SSR:
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/httpServices/clientActions.js [Client Component SSR]
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/_components/LoadMore/LoadMore.jsx [Client Component SSR]
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/_components/LoadMore/LoadMore.jsx [Server Component]
+    ./Documents/projects/FE-projects/CRUD-with-nextJS/frontend/app/page.js [Server Component]
+[00:02:16.671] Server  LOG      ✓ Compiled in 159ms
+[00:02:17.198] Server  LOG     Fetch Error: {}
+[00:02:21.449] Server  LOG     Fetch Error: {}
+[00:02:23.298] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/Documents...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className={"min-h-screen flex flex-col roboto_73ab3b80-module__Zt1jUW__className work_san..."}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:02:23.298] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:02:23.298] Browser LOG     Loading more all products, Page: 1

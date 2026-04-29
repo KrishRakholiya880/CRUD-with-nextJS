@@ -21,7 +21,9 @@ import {
 // 1. Get all products
 export async function getProductsAction(page, limit) {
   try {
-    const response = await apiClient.get(fetchAllProducts(page, limit));
+    const response = await apiClient.get(
+      fetchAllProducts(Number(page), Number(limit)),
+    );
     return response.data;
   } catch (error) {
     console.log("Fetch Error:", error.response?.data || error.message);
